@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 
 
-client = roslibpy.Ros(host='localhost', port=9090)
+client = roslibpy.Ros(host='10.0.0.3', port=9090)
 client.run()
 
 @app.route("/")
