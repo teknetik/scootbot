@@ -21,19 +21,21 @@ class CommandSubscriber(Node):
             self._velocity_received_callback_rw,
             10)
 
-        self.lv
-        self.rv
         self.command = False
 
     def _velocity_received_callback_lw(self, message):
        """Handle new velocity command message."""
-       self.get_logger().info('lv= ' + str(self.lv))
-       saber.drive(1, self.lv)
+       lv = message.data*10
+       if message.data != 0.0:
+           self.get_logger().info('lv= ' + str(lv))
+       saber.drive(2, lv)
 
     def _velocity_received_callback_rw(self, message):
        """Handle new velocity command message."""
-       self.get_logger().info('rv= ' + str(self.rv))
-       saber.drive(2, self.rv)
+       rv = message.data*10
+       if message.data != 0.0:
+           self.get_logger().info('rv= ' + str(rv))
+       saber.drive(1, rv)
         
 
 def main(args=None):

@@ -16,7 +16,7 @@ setup(
     py_modules=[],
     zip_safe=True,
     install_requires=['setuptools',
-                      'pyside2'],
+                      ],
     author='Jon Stephan',
     maintainer='Jon Stephan, Mark Rose',
     keywords=['ROS2'],
