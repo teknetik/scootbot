@@ -14,7 +14,7 @@
 
 from sqlalchemy import false
 import rclpy
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 import time
 from sensor_msgs.msg import Joy
 
@@ -53,11 +53,17 @@ def chatter_callback(msg):
         if b == 1:
             try:
                 print(button_map[int(idb)]['name'], button_map[int(idb)]['relay_pin'])
-                relay(button_map[int(idb)]['relay_pin'])
+                print(type(button_map[int(idb)]['status']))
                 if button_map[int(idb)]['status']:
-                    GPIO.output(button_map[int(idb)]['relay_pin'], GPIO.HIGH)
+                    print(button_map[int(idb)]['status'])
+                    p = GPIO.output(button_map[int(idb)]['relay_pin'], GPIO.HIGH)
+                    print(p)
+                    button_map[int(idb)]['status']=False
                 else:
-                    GPIO.output(button_map[int(idb)]['relay_pin'], GPIO.LOW)
+                    print(button_map[int(idb)]['status'])
+                    p = GPIO.output(button_map[int(idb)]['relay_pin'], GPIO.LOW)
+                    print(p)
+                    button_map[int(idb)]['status']=True
             except:
                 pass
 
