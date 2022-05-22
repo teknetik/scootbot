@@ -8,6 +8,6 @@ saber.drive(1, 10)
 #Left wheel
 saber.drive(2, 10)
 print("Sleep")
-time.sleep(3)
+time.sleep(120)
 print("stop")
 saber.stop()
