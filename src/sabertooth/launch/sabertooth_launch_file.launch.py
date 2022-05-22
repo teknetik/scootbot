@@ -17,8 +17,8 @@ def generate_launch_description():
             package='joy',
             executable='joy_node',
             output='screen',
-            name='joy'
-       parameters=[
-            {"dev": "/dev/input/event0"},
+            name='joy',
+            parameters=[
+                {"dev": "/dev/input/event0"}
         ])
     ])
