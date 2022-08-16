@@ -1,0 +1,10 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+
+        Signal Strength = {{ data['signal_strength'] }} <br>
+        Battery Voltage = {{ data['battery']['V'] }} <br>
+        memUsed = {{ data['memUsage']['used'] }} <br>
+        memFree = {{ data['memUsage']['free'] }} <br>
+{% endblock %}

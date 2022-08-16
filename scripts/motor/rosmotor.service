@@ -1,0 +1,16 @@
+[Unit]
+Description=scootapi
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+User=ubuntu
+PIDFile=/run/scootapi.pid
+Environment="HOME=ubuntu"
+ExecStart=/home/ubuntu/scootbot/scripts/motor/start.sh
+ExecReload=/home/ubuntu/scootbot/scripts/motor/restart.sh
+ExecStop=/home/ubuntu/scootbot/scripts/motor/stop.sh
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

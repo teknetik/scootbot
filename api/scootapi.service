@@ -1,0 +1,16 @@
+[Unit]
+Description=scootapi
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+User=ubuntu
+PIDFile=/run/scootapi.pid
+Environment="HOME=root"
+ExecStart=python3 /opt/api/node.py
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
