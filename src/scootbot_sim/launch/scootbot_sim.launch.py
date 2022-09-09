@@ -18,6 +18,11 @@ def generate_launch_description():
     # Check if we're told to use sim time
     use_sim_time = LaunchConfiguration('use_sim_time')
 
+    joy_config = launch.substitutions.LaunchConfiguration('joy_config')
+    joy_dev = launch.substitutions.LaunchConfiguration('joy_dev')
+    config_filepath = launch.substitutions.LaunchConfiguration('config_filepath')
+
+
     # Process the URDF file
     pkg_share = launch_ros.substitutions.FindPackageShare(package='scootbot_description').find('scootbot_description')
     default_model_path = os.path.join(pkg_share, 'src/description/scootbot_description.urdf')
@@ -55,6 +60,12 @@ def generate_launch_description():
 
     # Launch!
     return LaunchDescription([
+        launch.actions.DeclareLaunchArgument('joy_config', default_value='ps3'),
+        launch.actions.DeclareLaunchArgument('joy_dev', default_value='/dev/input/js0'),
+        launch.actions.DeclareLaunchArgument('config_filepath', default_value=[
+            launch.substitutions.TextSubstitution(text=os.path.join(
+                get_package_share_directory('teleop_twist_joy'), 'config', '')),
+            joy_config, launch.substitutions.TextSubstitution(text='.config.yaml')]),
         DeclareLaunchArgument(
             'use_sim_time',
             default_value='true',
@@ -64,6 +75,17 @@ def generate_launch_description():
             default_value=default_rviz_config_path,
             description='Absolute path to rviz config file'),
 
+        Node(
+            package='joy', executable='joy_node', name='joy_node',
+            parameters=[{
+                'dev': joy_dev,
+                'deadzone': 0.4,
+                'autorepeat_rate': 10.0,
+            }]),
+        Node(
+            package='teleop_twist_joy', executable='teleop_node',
+            name='teleop_twist_joy_node', parameters=[config_filepath]),
+        
         node_robot_state_publisher,
         joint_state_publisher_node,
         rviz_node,
