@@ -41,7 +41,7 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
-      Collision Enabled: false
+      Collision Enabled: true
       Description File: ""
       Description Source: Topic
       Description Topic:
@@ -66,12 +66,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        casterwhl_l_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        casterwhl_r_link:
+        battery:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -100,13 +95,13 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        casterwhl_l_link:
-          Value: true
-        casterwhl_r_link:
+        battery:
           Value: true
         drivewhl_l_link:
           Value: true
         drivewhl_r_link:
+          Value: true
+        odom:
           Value: true
       Marker Scale: 0.30000001192092896
       Name: TF
@@ -117,14 +112,14 @@ Visualization Manager:
         base_link:
           base_footprint:
             {}
-          casterwhl_l_link:
-            {}
-          casterwhl_r_link:
+          battery:
             {}
           drivewhl_l_link:
             {}
           drivewhl_r_link:
             {}
+        odom:
+          {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -310,10 +305,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3447973132133484
+      Pitch: 0.3697972893714905
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.243583679199219
+      Yaw: 5.068580150604248
     Saved: ~
 Window Geometry:
   Displays:

@@ -57,13 +57,18 @@
       </material>
     </visual>
    <collision>
-      <origin rpy="0 0 0" xyz="-1.0 0.0 0.0"/> 
+      <origin rpy="0 0 0" xyz="0.0 -0.18 0.10"/>
       <geometry>
         <mesh filename="file:///home/ubuntu/scootbot/install/scootbot_description/share/scootbot_description/src/description/frame.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
+    <inertial>
+      <mass value="10.455"/>
+      <origin xyz="0.0 -0.18 0.10"/>
+      <inertia ixx="0.6022" ixy="-0.02364" ixz="-0.1197" iyy="1.7386" iyz="-0.001544" izz="2.0296"/>
+    </inertial>
 
-    <xacro:box_inertia m="5" w="${base_width}" d="${base_length}" h="${base_height}"/>
+    
   </link>
 
   <gazebo reference="base_link">
@@ -81,6 +86,18 @@
  <!-- Wheels -->
   <xacro:macro name="wheel" params="prefix x_reflect y_reflect mirror x y">
     <link name="${prefix}_link">
+    <contact>
+      <lateral_friction value="1.0"/>
+      <rolling_friction value="0.0"/>
+      <stiffness value="30000"/>
+      <damping value="1000"/>
+    </contact>
+    
+    <inertial>
+      <mass value="2.637"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.02467" iyz="0" izz="0.04411"/>
+    </inertial>
       <visual>
         <origin xyz="${x} ${y} -0.135" rpy="${pi/2} 0 ${mirror} "/>
         <geometry>
@@ -94,7 +111,7 @@
         </material>
       </visual>
      <collision>
-        <origin xyz="-0.135 -0.045 -0.135" rpy="${pi/2} 0 0"/>
+        <origin xyz="${x} ${y} -0.135" rpy="${pi/2} 0 ${mirror} "/>
         <geometry>
         <mesh filename="file:///home/ubuntu/scootbot/install/scootbot_description/share/scootbot_description/src/description/tyre.obj" scale="0.002 0.002 0.002"/>
       </geometry>
@@ -109,11 +126,11 @@
      
     <gazebo reference="${prefix}_link">
       <mu1 value="1.0"/>
-      <mu2 value="1.0"/>
-      <kp  value="10000000.0" />
-      <kd  value="1.0" />
-      <fdir1 value="1 0 0"/>
-      <material>Gazebo/Grey</material>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Grey</material>
     <turnGravityOff>false</turnGravityOff>
 </gazebo>
 
@@ -173,4 +190,29 @@
 
   <xacro:caster_wheel prefix="casterwhl_l" x_reflect="1" y_reflect="0.43"/>
   <xacro:caster_wheel prefix="casterwhl_r" x_reflect="1" y_reflect="-0.47"/>
+
+  <!-- BATTERY - Dimensions: (L) 181mm x (W) 76mm x (H) 167mm -->
+    <!-- <joint name="battery_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="battery"/>
+        <origin xyz="-0.1 0 0"/>
+    </joint>
+
+    <link name="battery">
+        <visual>
+            <origin xyz="0.06 0 0.03" rpy="0.0 0.0 0"/>
+            <geometry>
+                <box size="0.076 0.167 0.181"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0.06 0 0.03"/>
+            <geometry>
+                <box size="0.076 0.167 0.181"/>
+            </geometry>
+        </collision>
+        <xacro:box_inertia m="5" w="0.167" d="0.076" h="0.181"/>
+    </link> -->
+
 </robot>
