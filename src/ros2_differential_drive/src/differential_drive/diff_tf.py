@@ -1,3 +1,5 @@
+#https://github.com/eden-desta/ros2_differential_drive/tree/ros2/src/differential_drive
+
 #!/usr/bin/env python
 #
 # Copyright (C) 2012 Jon Stephan.
@@ -71,12 +73,12 @@ class DiffTf(Node):
         self.get_logger().info(f"-I- {self.nodename} started")
 
         #### parameters #######
-        self.rate_hz = self.declare_parameter("rate_hz", 10.0).value # the rate at which to publish the transform
+        self.rate_hz = self.declare_parameter("rate_hz", 20.0).value # the rate at which to publish the transform
         self.create_timer(1.0/self.rate_hz, self.update)  
 
         self.ticks_meter = float(
-            self.declare_parameter('ticks_meter', 50).value)  # The number of wheel encoder ticks per meter of travel
-        self.base_width = float(self.declare_parameter('base_width', 0.245).value)  # The wheel base width in meters
+            self.declare_parameter('ticks_meter', 56816).value)  # The number of wheel encoder ticks per meter of travel
+        self.base_width = float(self.declare_parameter('base_width', 0.5).value)  # The wheel base width in meters
 
         self.base_frame_id = self.declare_parameter('base_frame_id',
                                                     'base_link').value  # the name of the base frame of the robot
@@ -107,9 +109,9 @@ class DiffTf(Node):
         self.then = self.get_clock().now()
 
         # subscriptions
-        self.create_subscription(Int16, "lwheel", self.lwheel_callback, 10)
-        self.create_subscription(Int16, "rwheel", self.rwheel_callback, 10)
-        self.odom_pub = self.create_publisher(Odometry, "odom", 10)
+        self.create_subscription(Int16, "lwheelenc", self.lwheel_callback, 10)
+        self.create_subscription(Int16, "rwheelenc", self.rwheel_callback, 10)
+        self.odom_pub = self.create_publisher(Odometry, "odom/encoders", 10)
         self.odom_broadcaster = TransformBroadcaster(self)
 
 

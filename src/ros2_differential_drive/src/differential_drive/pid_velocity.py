@@ -18,7 +18,7 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import Int16
+from std_msgs.msg import Int64
 from std_msgs.msg import Float32
 from numpy import array
 
@@ -56,7 +56,7 @@ class PidVelocity(Node):
         self.out_max = self.declare_parameter('out_max', 255).value
         self.rate = self.declare_parameter('rate', 30).value
         self.rolling_pts = self.declare_parameter('rolling_pts', 2).value
-        self.timeout_ticks = self.declare_parameter('timeout_ticks', 4).value
+        self.timeout_ticks = self.declare_parameter('timeout_ticks', 300).value
         self.ticks_per_meter = self.declare_parameter('ticks_meter', 20).value
         self.vel_threshold = self.declare_parameter('vel_threshold', 0.001).value
         self.encoder_min = self.declare_parameter('encoder_min', -32768).value
@@ -72,7 +72,7 @@ class PidVelocity(Node):
             self.nodename, self.Kp, self.Ki, self.Kd, self.ticks_per_meter))
 
         #### subscribers/publishers 
-        self.create_subscription(Int16, 'wheel', self.wheel_callback, 10)
+        self.create_subscription(Int64, 'wheel', self.wheel_callback, 10)
         self.create_subscription(Float32, 'wheel_vtarget', self.target_callback, 10)
         self.pub_motor = self.create_publisher(Float32, 'motor_cmd', 10)
         self.pub_vel = self.create_publisher(Float32, 'wheel_vel', 10)
@@ -83,11 +83,20 @@ class PidVelocity(Node):
         self.ticks_since_target = self.timeout_ticks
         self.wheel_prev = self.wheel_latest
         self.then = self.get_clock().now()
-        while rclpy.ok():
-            self.spin_once()
-            self.r.sleep()
+        self.get_logger().debug("HELLO !")
+        # if not rclpy.ok():
+        #     self.get_logger().debug("NOT OK...")
+        # else:
+        #     self.get_logger().debug("OK...")
+        # #while rclpy.ok():
+        # while True:
+        self.get_logger().debug("Spinning...")
+        self.spin_once()
+        self.r.sleep()
+            
 
     def spin_once(self):
+        self.get_logger().debug("spin_once() called")
         self.previous_error = 0.0
         self.prev_vel = [0.0] * self.rolling_pts
         self.integral = 0.0
@@ -96,7 +105,12 @@ class PidVelocity(Node):
         self.vel = 0.0
 
         # only do the loop if we've recently recieved a target velocity message
-        while rclpy.ok() and self.ticks_since_target < self.timeout_ticks:
+        if rclpy.ok() and self.ticks_since_target < self.timeout_ticks:
+            self.get_logger().debug("rcply.ok()")
+        else:
+            self.get_logger().debug("ticks_since_target " + str(self.ticks_since_target))
+            self.get_logger().debug("timeout_ticks " + str(self.timeout_ticks))
+        while rclpy.ok(): # and self.ticks_since_target < self.timeout_ticks:
             self.calc_velocity()
             self.do_pid()
             self.pub_motor.publish(self.motor)
@@ -187,8 +201,10 @@ class PidVelocity(Node):
     #        rospy.logdebug("-D- %s wheelCallback msg.data= %0.3f wheel_latest = %0.3f mult=%0.3f" % (self.nodename, enc, self.wheel_latest, self.wheel_mult))
 
     def target_callback(self, msg):
+        self.get_logger().debug("got vtarget")
         self.target = msg.data
         self.ticks_since_target = 0
+        self.spin()
         # rospy.logdebug("-D- %s targetCallback " % (self.nodename))
 
 
@@ -196,8 +212,9 @@ def main(args=None):
     rclpy.init(args=args)
     try:
         pid_velocity = PidVelocity()
-        pid_velocity.spin()
-    except rclpy.exceptions.ROSInterruptException:
+        rclpy.spin(pid_velocity)
+    except rclpy.exceptions.ROSInterruptException as e:
+        self.get_logger().debug(str(e))
         pass
 
     pid_velocity.destroy_node()

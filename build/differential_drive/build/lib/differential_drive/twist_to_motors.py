@@ -33,7 +33,7 @@ class TwistToMotors(Node):
         self.nodename = "twist_to_motors"
         self.get_logger().info("%s started" % self.nodename)
 
-        self.w = self.declare_parameter("base_width", 0.2).value
+        self.w = self.declare_parameter("base_width", 0.5).value
         self.dx = 0
         self.dr = 0
         self.ticks_since_target = 0
@@ -42,7 +42,7 @@ class TwistToMotors(Node):
         self.pub_rmotor = self.create_publisher(Float32, 'rwheel_vtarget', 10)
         self.create_subscription(Twist, 'cmd_vel', self.twist_callback, 10)
 
-        self.rate_hz = self.declare_parameter("rate_hz", 50).value
+        self.rate_hz = self.declare_parameter("rate_hz", 10).value
         
         self.create_timer(1.0/self.rate_hz, self.calculate_left_and_right_target)
 

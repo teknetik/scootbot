@@ -28,7 +28,9 @@ setup(
                             'twist_to_motors = differential_drive.twist_to_motors:main',
                             'virtual_joystick = differential_drive.virtual_joystick:main',
                             'wheel_loopback = differential_drive.wheel_loopback:main',
-                            'wheel_scaler = differential_drive.wheel_scaler:main'
+                            'wheel_scaler = differential_drive.wheel_scaler:main',
+                            'phidgets_encoder = differential_drive.phidgets_encoder:main',
+                            'pid = differential_drive.pid:main'
                             ],
     }
 )

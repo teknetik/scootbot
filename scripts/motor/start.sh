@@ -1,11 +1,7 @@
-source ~/scootbot/install/setup.sh
-sudo chmod 777 /dev/ttyS0
-sudo chmod 777 /dev/input/event0
-sudo chmod 777 /dev/gpiomem
-ros2 run sabertooth drive &
-ros2 run differential_drive twist_to_motors &
-ros2 run differential_drive diff_tf &
-
-ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox' &
-ros2 run joy_cmd joy_cmd_node &
+source ~/scootbot/install/setup.sh &
+~/scootbot/scripts/motor/permissions.sh &
+ros2 launch src/sabertooth/launch/sabertooth_launch_file.launch.py &
+ros2 launch sllidar_ros2 sllidar_launch.py &
 ros2 launch phidgets_spatial spatial-launch.py &
+ros2 launch imu_complementary_filter complementary_filter.launch.py &
+ros2 launch differential_drive pid.launch.py &

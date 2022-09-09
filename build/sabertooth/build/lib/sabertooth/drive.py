@@ -12,12 +12,12 @@ class CommandSubscriber(Node):
         super().__init__('command_subscriber')
         self.lv= self.create_subscription(
             Float32,
-            'lwheel_vtarget',
+            'lmotor_cmd',
             self._velocity_received_callback_lw,
             10)
         self.rv= self.create_subscription(
             Float32,
-            'rwheel_vtarget',
+            'rmotor_cmd',
             self._velocity_received_callback_rw,
             10)
 
@@ -25,14 +25,14 @@ class CommandSubscriber(Node):
 
     def _velocity_received_callback_lw(self, message):
        """Handle new velocity command message."""
-       lv = message.data*10
+       lv = message.data
        if message.data != 0.0:
            self.get_logger().info('lv= ' + str(lv))
        saber.drive(2, lv)
 
     def _velocity_received_callback_rw(self, message):
        """Handle new velocity command message."""
-       rv = message.data*10
+       rv = message.data
        if message.data != 0.0:
            self.get_logger().info('rv= ' + str(rv))
        saber.drive(1, rv)
