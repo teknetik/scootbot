@@ -46,21 +46,25 @@
       <!-- <origin rpy="0 0 0" xyz="0.0 ${base_height/2} ${base_width/2}"/> -->
       <origin rpy="0 0 0" xyz="0.0 -0.185 0.09"/> 
       <geometry>
-        <mesh filename="file:///home/teknetik/scootbot/install/scootbot_description/share/scootbot_description/src/description/frame.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/teknetik/ros2_ws/install/scootbot_description/share/scootbot_description/src/description/frame.obj" scale="0.001 0.001 0.001"/>
       </geometry>
        <material name="red">
         <color rgba="1 0.4 0.4 1"/>
       </material>
     </visual>
    <collision>
+      <origin rpy="0 0 0" xyz="-1.0 0.0. 0.0"/> 
       <geometry>
-        <sphere radius="0.5 0.5"/>
+        <mesh filename="file:///home/teknetik/ros2_ws/install/scootbot_description/share/scootbot_description/src/description/frame.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
     <xacro:box_inertia m="15" w="${base_width}" d="${base_length}" h="${base_height}"/>
   </link>
 
+  <gazebo reference="base_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
 <!-- Robot Footprint -->
   <link name="base_footprint"/>
 

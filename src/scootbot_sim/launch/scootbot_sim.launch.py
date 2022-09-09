@@ -7,6 +7,8 @@ from launch import LaunchDescription
 from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
 from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 import xacro
 
@@ -42,7 +44,14 @@ def generate_launch_description():
         output='screen',
         arguments=['-d', LaunchConfiguration('rvizconfig')],
     )
-
+    gazebo = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+             )
+    spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
+                        arguments=['-topic', 'robot_description',
+                                   '-entity', 'scootbot'],
+                        output='screen')
 
     # Launch!
     return LaunchDescription([
@@ -57,5 +66,7 @@ def generate_launch_description():
 
         node_robot_state_publisher,
         joint_state_publisher_node,
-        rviz_node
+        rviz_node,
+        gazebo,
+        spawn_entity,
     ])
