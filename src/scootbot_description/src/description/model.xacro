@@ -16,9 +16,9 @@
   
   <xacro:property name="caster_radius" value="0.075"/>
   <xacro:property name="caster_width" value="0.04"/>
-  <xacro:property name="caster_ygap" value="0.09"/>
-  <xacro:property name="caster_zoff" value="0.085"/>
-  <xacro:property name="caster_xoff" value="-0.26"/>
+  <xacro:property name="caster_ygap" value="-0.285"/>
+  <xacro:property name="caster_zoff" value="0.0985"/>
+  <xacro:property name="caster_xoff" value="-0.0375"/>
 
  <!-- Define intertial property macros  -->
   <xacro:macro name="box_inertia" params="m w h d">
@@ -50,7 +50,7 @@
       <origin rpy="0 0 0" xyz="0.0 -0.18 0.10"/>
       <!-- <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>  -->
       <geometry>
-        <mesh filename="file:///home/teknetik/ros2_ws/install/scootbot_description/share/scootbot_description/src/description/frame.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/ubuntu/scootbot/install/scootbot_description/share/scootbot_description/src/description/frame.obj" scale="0.001 0.001 0.001"/>
       </geometry>
        <material name="red">
         <color rgba="1 0.4 0.4 1"/>
@@ -134,7 +134,7 @@
     <turnGravityOff>false</turnGravityOff>
 </gazebo>
 
-    <joint name="${prefix}_joint" type="continuous">
+    <joint name="drivewhl_${prefix}_joint" type="continuous">
       <parent link="base_link"/>
       <child link="${prefix}_link"/>
       <origin xyz="${x_reflect*wheel_xoff} ${y_reflect*(base_width/2+wheel_ygap)} ${-wheel_zoff}" rpy="0 0 0"/>
@@ -142,13 +142,47 @@
     </joint>
   </xacro:macro> 
 
-  <xacro:wheel prefix="drivewhl_l" x_reflect="1" y_reflect="0.43" mirror="0" x="-0.135" y="-0.045"/>
-  <xacro:wheel prefix="drivewhl_r" x_reflect="1" y_reflect="-0.47" mirror="3.15" x="0.135" y="0.06"/>
+  <xacro:wheel prefix="l" x_reflect="1" y_reflect="0.43" mirror="0" x="-0.135" y="-0.045"/>
+  <xacro:wheel prefix="r" x_reflect="1" y_reflect="-0.47" mirror="3.15" x="0.135" y="0.06"/>
+
+ <!-- Caster Frame -->
+
+
+<xacro:macro name="caster_frame" params="prefix x_reflect y_reflect">
+    <link name="caster_frame_${prefix}_link">
+      <visual>
+        <origin xyz="0.22 -0.005 0.075" rpy="0 0 0"/>
+        <geometry>
+            <mesh filename="file:///home/ubuntu/scootbot/install/scootbot_description/share/scootbot_description/src/description/caster_frame.obj" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="Gray">
+          <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
+      </visual>
+     <collision>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+          <cylinder radius="${caster_radius}" length="${caster_width}"/>
+        </geometry>
+      </collision>
+    </link> 
+
+    <joint name="caster_frame_${prefix}_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="caster_frame_${prefix}_link"/>
+      <origin xyz="-0.221 -0.1752 0.026" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+    </joint>
+  </xacro:macro> 
+
+<xacro:caster_frame prefix="l" x_reflect="1" y_reflect="0.43"/>
+
 
  <!-- Caster Wheels -->
   <xacro:macro name="caster_wheel" params="prefix x_reflect y_reflect">
-    <link name="${prefix}_link">
+    <link name="casterwhl_${prefix}_link">
       <visual>
+        <!-- <origin xyz="0.22 -0.165 -0.01" rpy="${pi/2} 0 0"/> -->
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
         <geometry>
             <cylinder radius="${caster_radius}" length="${caster_width}"/>
@@ -180,39 +214,17 @@
       <xacro:cylinder_inertia m="0.5" r="${caster_radius}" h="${caster_width}"/>
     </link> 
 
-    <joint name="${prefix}_joint" type="continuous">
-      <parent link="base_link"/>
-      <child link="${prefix}_link"/>
+    <joint name="casterwhl_${prefix}_joint" type="continuous">
+      <parent link="caster_frame_${prefix}_link"/>
+      <child link="casterwhl_${prefix}_link"/>
       <origin xyz="${x_reflect*caster_xoff} ${y_reflect*(base_width/2+caster_ygap)} ${-caster_zoff}" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
     </joint>
   </xacro:macro> 
 
-  <xacro:caster_wheel prefix="casterwhl_l" x_reflect="1" y_reflect="0.43"/>
-  <xacro:caster_wheel prefix="casterwhl_r" x_reflect="1" y_reflect="-0.47"/>
+  <xacro:caster_wheel prefix="l" x_reflect="1" y_reflect="0.43"/>
+  <!-- <xacro:caster_wheel prefix="r" x_reflect="1" y_reflect="-0.47"/> -->
 
-  <!-- BATTERY - Dimensions: (L) 181mm x (W) 76mm x (H) 167mm -->
-    <!-- <joint name="battery_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="battery"/>
-        <origin xyz="-0.1 0 0"/>
-    </joint>
 
-    <link name="battery">
-        <visual>
-            <origin xyz="0.06 0 0.03" rpy="0.0 0.0 0"/>
-            <geometry>
-                <box size="0.076 0.167 0.181"/>
-            </geometry>
-            <material name="white"/>
-        </visual>
-        <collision>
-            <origin xyz="0.06 0 0.03"/>
-            <geometry>
-                <box size="0.076 0.167 0.181"/>
-            </geometry>
-        </collision>
-        <xacro:box_inertia m="5" w="0.167" d="0.076" h="0.181"/>
-    </link> -->
 
 </robot>
