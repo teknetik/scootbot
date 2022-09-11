@@ -126,13 +126,13 @@
      
     <gazebo reference="${prefix}_link">
       <mu1 value="1.0"/>
-    <mu2 value="1.0"/>
-    <kp value="10000000.0"/>
-    <kd value="1.0"/>
-    <fdir1 value="1 0 0"/>
-    <material>Gazebo/Grey</material>
-    <turnGravityOff>false</turnGravityOff>
-</gazebo>
+      <mu2 value="1.0"/>
+      <kp value="10000000.0"/>
+      <kd value="1.0"/>
+      <fdir1 value="1 0 0"/>
+      <material>Gazebo/Grey</material>
+      <turnGravityOff>false</turnGravityOff>
+    </gazebo>
 
     <joint name="drivewhl_${prefix}_joint" type="continuous">
       <parent link="base_link"/>
@@ -147,8 +147,8 @@
 
  <!-- Caster Frame -->
 
-
 <xacro:macro name="caster_frame" params="prefix x_reflect y_reflect">
+
     <link name="caster_frame_${prefix}_link">
       <visual>
         <origin xyz="0.22 -0.005 0.075" rpy="0 0 0"/>
@@ -165,18 +165,36 @@
           <cylinder radius="${caster_radius}" length="${caster_width}"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="10.455"/>
+        <origin xyz="0.0 -0.18 0.10"/>
+        <inertia ixx="0.6022" ixy="-0.02364" ixz="-0.1197" iyy="1.7386" iyz="-0.001544" izz="2.0296"/>
+      </inertial>
     </link> 
 
     <joint name="caster_frame_${prefix}_joint" type="continuous">
       <parent link="base_link"/>
       <child link="caster_frame_${prefix}_link"/>
-      <origin xyz="-0.221 -0.1752 0.026" rpy="0 0 0"/>
+      <origin xyz="-0.221 ${y_reflect} 0.026" rpy="0 0 0"/>
       <axis xyz="0 0 1"/>
     </joint>
+    
+    <gazebo reference="caster_frame_${prefix}_link">
+      <mu1 value="1.0"/>
+      <mu2 value="1.0"/>
+      <kp value="10000000.0"/>
+      <kd value="1.0"/>
+      <fdir1 value="1 0 0"/>
+      <material>Gazebo/Grey</material>
+      <turnGravityOff>false</turnGravityOff>
+    </gazebo>
+
   </xacro:macro> 
 
-<xacro:caster_frame prefix="l" x_reflect="1" y_reflect="0.43"/>
+<xacro:caster_frame prefix="l" x_reflect="1" y_reflect="-0.1752"/>
+<xacro:caster_frame prefix="r" x_reflect="1" y_reflect="0.1752"/>
 
+  
 
  <!-- Caster Wheels -->
   <xacro:macro name="caster_wheel" params="prefix x_reflect y_reflect">
@@ -223,7 +241,7 @@
   </xacro:macro> 
 
   <xacro:caster_wheel prefix="l" x_reflect="1" y_reflect="0.43"/>
-  <!-- <xacro:caster_wheel prefix="r" x_reflect="1" y_reflect="-0.47"/> -->
+  <xacro:caster_wheel prefix="r" x_reflect="1" y_reflect="-0.47"/>
 
 
 
