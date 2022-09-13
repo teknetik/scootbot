@@ -41,7 +41,7 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
-      Collision Enabled: false
+      Collision Enabled: true
       Description File: ""
       Description Source: Topic
       Description Topic:
@@ -66,21 +66,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_frame_l_link:
+        dummy:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        caster_frame_r_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        casterwhl_l_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         l_link:
           Alpha: 1
           Show Axes: false
@@ -105,13 +94,11 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        caster_frame_l_link:
-          Value: true
-        caster_frame_r_link:
-          Value: true
-        casterwhl_l_link:
+        dummy:
           Value: true
         l_link:
+          Value: true
+        odom:
           Value: true
         r_link:
           Value: true
@@ -121,18 +108,16 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          base_footprint:
-            {}
-          caster_frame_l_link:
-            casterwhl_l_link:
+        dummy:
+          {}
+        odom:
+          base_link:
+            base_footprint:
               {}
-          caster_frame_r_link:
-            {}
-          l_link:
-            {}
-          r_link:
-            {}
+            l_link:
+              {}
+            r_link:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -303,25 +288,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.8833664655685425
+      Distance: 1.1595454216003418
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.21004720032215118
-        Y: -0.152128204703331
-        Z: -0.0700044110417366
+        X: 0.18943269550800323
+        Y: 0.111410953104496
+        Z: -0.09025955200195312
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.605398416519165
+      Pitch: 0.1403992921113968
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.532188653945923
+      Yaw: 6.195367336273193
     Saved: ~
 Window Geometry:
   Displays:
