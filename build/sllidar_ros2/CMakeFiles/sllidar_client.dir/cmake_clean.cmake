@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o"
+  "CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o.d"
   "sllidar_client"
   "sllidar_client.pdb"
 )

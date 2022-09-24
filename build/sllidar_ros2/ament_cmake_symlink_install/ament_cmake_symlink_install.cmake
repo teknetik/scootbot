@@ -322,14 +322,14 @@ ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/sllidar_ros2" FILES
 # install(FILES "/home/ubuntu/scootbot/build/sllidar_ros2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/sllidar_ros2" FILES "/home/ubuntu/scootbot/build/sllidar_ros2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/sllidar_ros2/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/sllidar_ros2" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/sllidar_ros2/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/sllidar_ros2/environment")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/sllidar_ros2" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/sllidar_ros2/environment")
 
 # install(FILES "/home/ubuntu/scootbot/build/sllidar_ros2/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/sllidar_ros2/environment")
 ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/sllidar_ros2" FILES "/home/ubuntu/scootbot/build/sllidar_ros2/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/sllidar_ros2/environment")
 
-# install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/sllidar_ros2/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/sllidar_ros2" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/sllidar_ros2/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/sllidar_ros2/environment")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/sllidar_ros2" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/sllidar_ros2/environment")
 
 # install(FILES "/home/ubuntu/scootbot/build/sllidar_ros2/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/sllidar_ros2/environment")
 ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/sllidar_ros2" FILES "/home/ubuntu/scootbot/build/sllidar_ros2/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/sllidar_ros2/environment")

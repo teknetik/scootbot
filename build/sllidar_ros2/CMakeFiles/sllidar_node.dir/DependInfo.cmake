@@ -1,35 +1,24 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/arch/linux/timer.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/hal/thread.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/rplidar_driver.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_crc.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/src/sllidar_node.cpp" "/home/ubuntu/scootbot/build/sllidar_ros2/CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "DEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp"
-  "RCUTILS_ENABLE_FAULT_INJECTION"
-  "SPDLOG_COMPILED_LIB"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ubuntu/scootbot/src/sllidar_ros2/./sdk/include"
-  "/home/ubuntu/scootbot/src/sllidar_ros2/./sdk/src"
-  "/opt/ros/foxy/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/arch/linux/timer.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/hal/thread.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/rplidar_driver.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_crc.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp" "CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o.d"
+  "/home/ubuntu/scootbot/src/sllidar_ros2/src/sllidar_node.cpp" "CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o" "gcc" "CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o.d"
   )
 
 # Targets to which this target links.

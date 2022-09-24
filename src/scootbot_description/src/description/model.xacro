@@ -48,27 +48,29 @@
       <origin rpy="0 0 0" xyz="0.05 0 -0.06 "/>
       <geometry>
         <!-- <mesh filename="file:///home/ubuntu/scootbot/install/scootbot_description/share/scootbot_description/src/description/frame.stl" scale="0.001 0.001 0.001"/> -->
-        <box size="0.568 0.39 0.10"/>
+        <box size="0.468 0.39 0.10"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="50"/>
-      <origin xyz="0 0 0"/>
-      <!--
-        | ixx="-0.999998" ixy="-0.000077" ixz="0.001926" |
-        | ixy="-0.000078" iyy="1.000000" iyz="-0.000611" |
-        | ixz="-0.001926" iyz="-0.000611" izz="-0.999998" |
-        -->
-      <!-- <inertia ixx="-0.999998" ixy="-0.000077" ixz="-0.001926" iyy="1.000000" iyz="-0.000611" izz="-0.999998"/> -->
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-    </inertial>
   </link>
 
   <gazebo reference="base_link">
     <material>Gazebo/Grey</material>
   </gazebo>
 
+ <!-- Inertial link stores the robot's inertial information -->
+  <link name="inertial_link">
+    <inertial>
+      <mass value="46.034" />
+      <origin xyz="0 0 0" />
+      <inertia ixx="0.6022" ixy="-0.02364" ixz="-0.1197" iyy="1.7386" iyz="-0.001544" izz="2.0296" />
+    </inertial>
+  </link>
 
+  <joint name="inertial_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="inertial_link" />
+  </joint>
 
 <!-- Wheels -->
 <xacro:macro name="wheel" params="prefix x_reflect y_reflect mirror x y col_x col_y col_z">
@@ -81,16 +83,11 @@
       <damping value="1000"/>
     </contact>
     
-    <inertial>
-      <mass value="15"/>
-      <origin xyz="0 0 0"/>
-      <!--
-        | ixx="0.000819" ixy="-0.000000" ixz="0.000000" |
-        | ixy="-0.000000" iyy="0.001344" iyz="0.000000" |
-        | ixz="0.000000" iyz="0.000000" izz="0.000819" |
-        -->
-      <inertia ixx="0.000819" ixy="-0.000000" ixz="0.000000" iyy="0.001344" iyz="0.000000" izz="0.000819"/>
-    </inertial>
+        <inertial>
+				<mass value="2.637" />
+				<origin xyz="0 0 0" />
+				<inertia  ixx="0.02467" ixy="0" ixz="0" iyy="0.04411" iyz="0" izz="0.02467" />
+			</inertial>
 
       <visual>
         <origin xyz="${x} ${y} -0.135" rpy="${pi/2} 0 ${mirror} "/>
@@ -115,14 +112,12 @@
   </link> 
      
     <gazebo reference="${prefix}_link">
-      <mu1 value="200"/>
-      <mu2 value="200"/>
-      <kp value="10000000.0"/>
-      <kd value="1.0"/>
-      <minDepth>0.01</minDepth>
-      <material>Gazebo/Grey</material>
-      <turnGravityOff>false</turnGravityOff>
-    </gazebo>
+			<mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
+		</gazebo>
 
     <joint name="drivewhl_${prefix}_joint" type="continuous">
       <parent link="base_link"/>
@@ -156,10 +151,10 @@
         </geometry>
       </collision>
       <inertial>
-        <mass value="1"/>
-        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
-        <inertia ixx="0.000419" ixy="-0.000000" ixz="0.000000" iyy="0.00744" iyz="0.000000" izz="0.000419"/>
-      </inertial>
+				<mass value="2.637" />
+				<origin xyz="0 0 0" />
+				<inertia  ixx="0.0002467" ixy="0" ixz="0" iyy="0.0004411" iyz="0" izz="0.0002467" />
+			</inertial>
     </link> 
 
     <joint name="caster_frame_${prefix}_joint" type="continuous">
@@ -170,15 +165,11 @@
     </joint>
     
     <gazebo reference="caster_frame_${prefix}_link">
-      <mu1 value="400"/>
-      <mu2 value="400"/>
-      <kp value="10000000.0"/>
-      <kd value="1.0"/>
-      <minDepth>0.01</minDepth>
-      <material>Gazebo/Grey</material>
-      <turnGravityOff>false</turnGravityOff>
-      <material>Gazebo/Grey</material>
-      <turnGravityOff>false</turnGravityOff>
+      <mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
     </gazebo>
 
   </xacro:macro> 
@@ -204,15 +195,16 @@
      <collision>
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
         <geometry>
-          <cylinder radius="${caster_radius}" length="${caster_width}"/>
+          <!-- <cylinder radius="${caster_radius}" length="${caster_width}"/> -->
+          <sphere radius="${caster_radius}"/>
         </geometry>
       </collision>
 
-    <inertial>
-        <mass value="4"/>
-        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
-        <inertia ixx="0.000419" ixy="-0.000000" ixz="0.000000" iyy="0.00744" iyz="0.000000" izz="0.000419"/>
-      </inertial>
+          <inertial>
+				<mass value="2.637" />
+				<origin xyz="0 0 0" />
+				<inertia  ixx="0.0002467" ixy="0" ixz="0" iyy="0.0004411" iyz="0" izz="0.0002467" />
+			</inertial>
 
     </link> 
 
@@ -224,15 +216,11 @@
     </joint>
 
     <gazebo reference="casterwhl_${prefix}_link">
-      <mu1 value="400"/>
-      <mu2 value="400"/>
-      <kp value="10000000.0"/>
-      <kd value="1.0"/>
-      <minDepth>0.01</minDepth>
-      <material>Gazebo/Grey</material>
-      <turnGravityOff>false</turnGravityOff>
-      <material>Gazebo/Grey</material>
-      <turnGravityOff>false</turnGravityOff>
+      <mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
     </gazebo>
 
   </xacro:macro> 

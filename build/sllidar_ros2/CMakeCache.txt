@@ -51,7 +51,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -77,7 +77,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -256,6 +256,9 @@ OPENSSL_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libssl.so
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
@@ -272,76 +275,82 @@ SITE:STRING=scoot-ai
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/foxy/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
-ament_cmake_DIR:PATH=/opt/ros/foxy/share/ament_cmake/cmake
+ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_core.
-ament_cmake_core_DIR:PATH=/opt/ros/foxy/share/ament_cmake_core/cmake
+ament_cmake_core_DIR:PATH=/opt/ros/humble/share/ament_cmake_core/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_definitions.
-ament_cmake_export_definitions_DIR:PATH=/opt/ros/foxy/share/ament_cmake_export_definitions/cmake
+ament_cmake_export_definitions_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_definitions/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_dependencies.
-ament_cmake_export_dependencies_DIR:PATH=/opt/ros/foxy/share/ament_cmake_export_dependencies/cmake
+ament_cmake_export_dependencies_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_dependencies/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_include_directories.
-ament_cmake_export_include_directories_DIR:PATH=/opt/ros/foxy/share/ament_cmake_export_include_directories/cmake
+ament_cmake_export_include_directories_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_include_directories/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_interfaces.
-ament_cmake_export_interfaces_DIR:PATH=/opt/ros/foxy/share/ament_cmake_export_interfaces/cmake
+ament_cmake_export_interfaces_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_interfaces/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_libraries.
-ament_cmake_export_libraries_DIR:PATH=/opt/ros/foxy/share/ament_cmake_export_libraries/cmake
+ament_cmake_export_libraries_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_libraries/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_link_flags.
-ament_cmake_export_link_flags_DIR:PATH=/opt/ros/foxy/share/ament_cmake_export_link_flags/cmake
+ament_cmake_export_link_flags_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_link_flags/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_targets.
-ament_cmake_export_targets_DIR:PATH=/opt/ros/foxy/share/ament_cmake_export_targets/cmake
+ament_cmake_export_targets_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_targets/cmake
+
+//The directory containing a CMake configuration file for ament_cmake_gen_version_h.
+ament_cmake_gen_version_h_DIR:PATH=/opt/ros/humble/share/ament_cmake_gen_version_h/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_include_directories.
-ament_cmake_include_directories_DIR:PATH=/opt/ros/foxy/share/ament_cmake_include_directories/cmake
+ament_cmake_include_directories_DIR:PATH=/opt/ros/humble/share/ament_cmake_include_directories/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_libraries.
-ament_cmake_libraries_DIR:PATH=/opt/ros/foxy/share/ament_cmake_libraries/cmake
+ament_cmake_libraries_DIR:PATH=/opt/ros/humble/share/ament_cmake_libraries/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_python.
-ament_cmake_python_DIR:PATH=/opt/ros/foxy/share/ament_cmake_python/cmake
+ament_cmake_python_DIR:PATH=/opt/ros/humble/share/ament_cmake_python/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_target_dependencies.
-ament_cmake_target_dependencies_DIR:PATH=/opt/ros/foxy/share/ament_cmake_target_dependencies/cmake
+ament_cmake_target_dependencies_DIR:PATH=/opt/ros/humble/share/ament_cmake_target_dependencies/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_test.
-ament_cmake_test_DIR:PATH=/opt/ros/foxy/share/ament_cmake_test/cmake
+ament_cmake_test_DIR:PATH=/opt/ros/humble/share/ament_cmake_test/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_version.
-ament_cmake_version_DIR:PATH=/opt/ros/foxy/share/ament_cmake_version/cmake
+ament_cmake_version_DIR:PATH=/opt/ros/humble/share/ament_cmake_version/cmake
+
+//The directory containing a CMake configuration file for ament_index_cpp.
+ament_index_cpp_DIR:PATH=/opt/ros/humble/share/ament_index_cpp/cmake
 
 //The directory containing a CMake configuration file for builtin_interfaces.
-builtin_interfaces_DIR:PATH=/opt/ros/foxy/share/builtin_interfaces/cmake
+builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
 
 //The directory containing a CMake configuration file for fastcdr.
-fastcdr_DIR:PATH=/opt/ros/foxy/lib/cmake/fastcdr
+fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
 
 //The directory containing a CMake configuration file for fastrtps.
-fastrtps_DIR:PATH=/opt/ros/foxy/share/fastrtps/cmake
+fastrtps_DIR:PATH=/opt/ros/humble/share/fastrtps/cmake
 
 //The directory containing a CMake configuration file for fastrtps_cmake_module.
-fastrtps_cmake_module_DIR:PATH=/opt/ros/foxy/share/fastrtps_cmake_module/cmake
+fastrtps_cmake_module_DIR:PATH=/opt/ros/humble/share/fastrtps_cmake_module/cmake
 
 //The directory containing a CMake configuration file for foonathan_memory.
-foonathan_memory_DIR:PATH=/opt/ros/foxy/lib/foonathan_memory/cmake
+foonathan_memory_DIR:PATH=/opt/ros/humble/lib/foonathan_memory/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
-geometry_msgs_DIR:PATH=/opt/ros/foxy/share/geometry_msgs/cmake
+geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
 
 //The directory containing a CMake configuration file for libstatistics_collector.
-libstatistics_collector_DIR:PATH=/opt/ros/foxy/share/libstatistics_collector/cmake
+libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/cmake
 
 //The directory containing a CMake configuration file for libyaml_vendor.
-libyaml_vendor_DIR:PATH=/opt/ros/foxy/share/libyaml_vendor/cmake
+libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so
@@ -350,85 +359,100 @@ pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so
 pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/aarch64-linux-gnu/libssl.so
 
 //The directory containing a CMake configuration file for rcl.
-rcl_DIR:PATH=/opt/ros/foxy/share/rcl/cmake
+rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
 
 //The directory containing a CMake configuration file for rcl_interfaces.
-rcl_interfaces_DIR:PATH=/opt/ros/foxy/share/rcl_interfaces/cmake
+rcl_interfaces_DIR:PATH=/opt/ros/humble/share/rcl_interfaces/cmake
+
+//The directory containing a CMake configuration file for rcl_logging_interface.
+rcl_logging_interface_DIR:PATH=/opt/ros/humble/share/rcl_logging_interface/cmake
 
 //The directory containing a CMake configuration file for rcl_logging_spdlog.
-rcl_logging_spdlog_DIR:PATH=/opt/ros/foxy/share/rcl_logging_spdlog/cmake
+rcl_logging_spdlog_DIR:PATH=/opt/ros/humble/share/rcl_logging_spdlog/cmake
 
 //The directory containing a CMake configuration file for rcl_yaml_param_parser.
-rcl_yaml_param_parser_DIR:PATH=/opt/ros/foxy/share/rcl_yaml_param_parser/cmake
+rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
 
 //The directory containing a CMake configuration file for rclcpp.
-rclcpp_DIR:PATH=/opt/ros/foxy/share/rclcpp/cmake
+rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
 
 //The directory containing a CMake configuration file for rcpputils.
-rcpputils_DIR:PATH=/opt/ros/foxy/share/rcpputils/cmake
+rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
 
 //The directory containing a CMake configuration file for rcutils.
-rcutils_DIR:PATH=/opt/ros/foxy/share/rcutils/cmake
+rcutils_DIR:PATH=/opt/ros/humble/share/rcutils/cmake
 
 //The directory containing a CMake configuration file for rmw.
-rmw_DIR:PATH=/opt/ros/foxy/share/rmw/cmake
+rmw_DIR:PATH=/opt/ros/humble/share/rmw/cmake
+
+//The directory containing a CMake configuration file for rmw_dds_common.
+rmw_dds_common_DIR:PATH=/opt/ros/humble/share/rmw_dds_common/cmake
+
+//The directory containing a CMake configuration file for rmw_fastrtps_cpp.
+rmw_fastrtps_cpp_DIR:PATH=/opt/ros/humble/share/rmw_fastrtps_cpp/cmake
+
+//The directory containing a CMake configuration file for rmw_fastrtps_shared_cpp.
+rmw_fastrtps_shared_cpp_DIR:PATH=/opt/ros/humble/share/rmw_fastrtps_shared_cpp/cmake
 
 //The directory containing a CMake configuration file for rmw_implementation.
-rmw_implementation_DIR:PATH=/opt/ros/foxy/share/rmw_implementation/cmake
+rmw_implementation_DIR:PATH=/opt/ros/humble/share/rmw_implementation/cmake
 
 //The directory containing a CMake configuration file for rmw_implementation_cmake.
-rmw_implementation_cmake_DIR:PATH=/opt/ros/foxy/share/rmw_implementation_cmake/cmake
+rmw_implementation_cmake_DIR:PATH=/opt/ros/humble/share/rmw_implementation_cmake/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
-rosgraph_msgs_DIR:PATH=/opt/ros/foxy/share/rosgraph_msgs/cmake
+rosgraph_msgs_DIR:PATH=/opt/ros/humble/share/rosgraph_msgs/cmake
 
 //The directory containing a CMake configuration file for rosidl_adapter.
-rosidl_adapter_DIR:PATH=/opt/ros/foxy/share/rosidl_adapter/cmake
+rosidl_adapter_DIR:PATH=/opt/ros/humble/share/rosidl_adapter/cmake
 
 //The directory containing a CMake configuration file for rosidl_cmake.
-rosidl_cmake_DIR:PATH=/opt/ros/foxy/share/rosidl_cmake/cmake
+rosidl_cmake_DIR:PATH=/opt/ros/humble/share/rosidl_cmake/cmake
 
 //The directory containing a CMake configuration file for rosidl_default_runtime.
-rosidl_default_runtime_DIR:PATH=/opt/ros/foxy/share/rosidl_default_runtime/cmake
+rosidl_default_runtime_DIR:PATH=/opt/ros/humble/share/rosidl_default_runtime/cmake
 
 //The directory containing a CMake configuration file for rosidl_generator_c.
-rosidl_generator_c_DIR:PATH=/opt/ros/foxy/share/rosidl_generator_c/cmake
+rosidl_generator_c_DIR:PATH=/opt/ros/humble/share/rosidl_generator_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_generator_cpp.
-rosidl_generator_cpp_DIR:PATH=/opt/ros/foxy/share/rosidl_generator_cpp/cmake
+rosidl_generator_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_generator_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_runtime_c.
-rosidl_runtime_c_DIR:PATH=/opt/ros/foxy/share/rosidl_runtime_c/cmake
+rosidl_runtime_c_DIR:PATH=/opt/ros/humble/share/rosidl_runtime_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_runtime_cpp.
-rosidl_runtime_cpp_DIR:PATH=/opt/ros/foxy/share/rosidl_runtime_cpp/cmake
+rosidl_runtime_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_runtime_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_c.
-rosidl_typesupport_c_DIR:PATH=/opt/ros/foxy/share/rosidl_typesupport_c/cmake
+rosidl_typesupport_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_cpp.
-rosidl_typesupport_cpp_DIR:PATH=/opt/ros/foxy/share/rosidl_typesupport_cpp/cmake
+rosidl_typesupport_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_fastrtps_c.
-rosidl_typesupport_fastrtps_c_DIR:PATH=/opt/ros/foxy/share/rosidl_typesupport_fastrtps_c/cmake
+rosidl_typesupport_fastrtps_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_fastrtps_cpp.
-rosidl_typesupport_fastrtps_cpp_DIR:PATH=/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/cmake
+rosidl_typesupport_fastrtps_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_interface.
-rosidl_typesupport_interface_DIR:PATH=/opt/ros/foxy/share/rosidl_typesupport_interface/cmake
+rosidl_typesupport_interface_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_interface/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_introspection_c.
-rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/foxy/share/rosidl_typesupport_introspection_c/cmake
+rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_introspection_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_introspection_cpp.
-rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/cmake
+rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
-sensor_msgs_DIR:PATH=/opt/ros/foxy/share/sensor_msgs/cmake
+sensor_msgs_DIR:PATH=/opt/ros/humble/share/sensor_msgs/cmake
 
 //Value Computed by CMake
 sllidar_ros2_BINARY_DIR:STATIC=/home/ubuntu/scootbot/build/sllidar_ros2
+
+//Value Computed by CMake
+sllidar_ros2_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 sllidar_ros2_SOURCE_DIR:STATIC=/home/ubuntu/scootbot/src/sllidar_ros2
@@ -440,19 +464,19 @@ spdlog_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/spdlog
 spdlog_vendor_DIR:PATH=/opt/ros/foxy/share/spdlog_vendor/cmake
 
 //The directory containing a CMake configuration file for statistics_msgs.
-statistics_msgs_DIR:PATH=/opt/ros/foxy/share/statistics_msgs/cmake
+statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
-std_msgs_DIR:PATH=/opt/ros/foxy/share/std_msgs/cmake
+std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for std_srvs.
-std_srvs_DIR:PATH=/opt/ros/foxy/share/std_srvs/cmake
+std_srvs_DIR:PATH=/opt/ros/humble/share/std_srvs/cmake
 
 //The directory containing a CMake configuration file for tracetools.
-tracetools_DIR:PATH=/opt/ros/foxy/share/tracetools/cmake
+tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
 
 //The directory containing a CMake configuration file for yaml.
-yaml_DIR:PATH=/opt/ros/foxy/cmake
+yaml_DIR:PATH=/opt/ros/humble/cmake
 
 
 ########################
@@ -468,9 +492,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/ubuntu/scootbot/build/sllidar_ros2
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=16
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=22
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -579,7 +603,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.16
+CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.22
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -613,7 +637,9 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding FastRTPS
 FIND_PACKAGE_MESSAGE_DETAILS_FastRTPS:INTERNAL=[/opt/ros/foxy/include][/opt/ros/foxy/lib/libfastrtps.so;/opt/ros/foxy/lib/libfastcdr.so][v()]
 //Details about finding OpenSSL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/aarch64-linux-gnu/libcrypto.so][/usr/include][c ][v1.1.1f()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/aarch64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
+//Details about finding Python3
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.6()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.8.10(3)]
 //Details about finding Threads
@@ -624,6 +650,8 @@ OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_SSL_LIBRARY
 OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
@@ -663,6 +691,11 @@ _OPENSSL_openssl_INCLUDEDIR:INTERNAL=
 _OPENSSL_openssl_LIBDIR:INTERNAL=
 _OPENSSL_openssl_PREFIX:INTERNAL=
 _OPENSSL_openssl_VERSION:INTERNAL=
+//Path to a program.
+_Python3_EXECUTABLE:INTERNAL=/usr/bin/python3.10
+//Python3 Properties
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;6;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=b91b4035ecb3bb3f5760d35922531bcd
 //Index for unique symlink install targets
 __AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=1
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
