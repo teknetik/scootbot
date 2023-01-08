@@ -1,0 +1,1 @@
+/home/ubuntu/scootbot/2.0.0/build/scootbot/ament_cmake_core/scootbotConfig.cmake

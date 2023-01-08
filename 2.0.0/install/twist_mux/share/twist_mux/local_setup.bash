@@ -1,0 +1,1 @@
+/home/ubuntu/scootbot/2.0.0/build/twist_mux/ament_cmake_environment_hooks/local_setup.bash

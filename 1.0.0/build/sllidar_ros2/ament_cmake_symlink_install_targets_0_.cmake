@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/scootbot/build/sllidar_ros2/sllidar_node" "/home/ubuntu/scootbot/build/sllidar_ros2/sllidar_client" "TARGETS" "sllidar_node" "sllidar_client" "RUNTIME_DESTINATION" "lib/sllidar_ros2")
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/scootbot/1.0.0/build/sllidar_ros2/sllidar_node" "/home/ubuntu/scootbot/1.0.0/build/sllidar_ros2/sllidar_client" "TARGETS" "sllidar_node" "sllidar_client" "RUNTIME_DESTINATION" "lib/sllidar_ros2")

@@ -1,1 +1,1 @@
-/home/ubuntu/scootbot/src/sabertooth/setup.py
+/home/ubuntu/scootbot/1.0.0/src/sabertooth/setup.py

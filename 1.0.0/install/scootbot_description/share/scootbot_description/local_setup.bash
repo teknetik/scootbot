@@ -1,1 +1,1 @@
-/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.bash
+/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.bash

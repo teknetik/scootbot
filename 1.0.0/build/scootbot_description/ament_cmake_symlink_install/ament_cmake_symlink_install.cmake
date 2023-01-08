@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ubuntu/scootbot/install/scootbot_description/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ubuntu/scootbot/1.0.0/install/scootbot_description/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ubuntu/scootbot/install/scootbot_description/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ubuntu/scootbot/1.0.0/install/scootbot_description/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ubuntu/scootbot/install/scootbot_description/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ubuntu/scootbot/1.0.0/install/scootbot_description/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/ubuntu/scootbot/install/scootbot_description/${destination}")
+      set(destination "/home/ubuntu/scootbot/1.0.0/install/scootbot_description/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,46 +311,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "src" "launch" "rviz" "config" "DESTINATION" "share/scootbot_description")
-ament_cmake_symlink_install_directory("/home/ubuntu/scootbot/src/scootbot_description" DIRECTORY "src" "launch" "rviz" "config" "DESTINATION" "share/scootbot_description")
+ament_cmake_symlink_install_directory("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" DIRECTORY "src" "launch" "rviz" "config" "DESTINATION" "share/scootbot_description")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/scootbot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/scootbot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/scootbot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/scootbot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/scootbot_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/scootbot_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/scootbot_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/scootbot_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/scootbot_description/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/scootbot_description/environment")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/scootbot_description/environment")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/scootbot_description/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/scootbot_description/environment")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/scootbot_description/environment")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/scootbot_description/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/scootbot_description/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/scootbot_description/environment")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/scootbot_description/environment")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/scootbot_description/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/scootbot_description/environment")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/scootbot_description/environment")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/scootbot_description/environment")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/scootbot_description")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/scootbot_description")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/scootbot_description")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/scootbot_description")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/scootbot_description")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/scootbot_description")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/scootbot_description")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/scootbot_description")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/scootbot_description")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/scootbot_description")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/scootbot_description")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/scootbot_description")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/scootbot_description")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/scootbot_description")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/scootbot_description")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/scootbot_description")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/scootbot_description")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/scootbot_description")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/scootbot_description")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/scootbot_description")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/packages/scootbot_description" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/packages/scootbot_description" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/packages/scootbot_description" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_index/share/ament_index/resource_index/packages/scootbot_description" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_core/scootbot_descriptionConfig.cmake" "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_core/scootbot_descriptionConfig-version.cmake" "DESTINATION" "share/scootbot_description/cmake")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_core/scootbot_descriptionConfig.cmake" "/home/ubuntu/scootbot/build/scootbot_description/ament_cmake_core/scootbot_descriptionConfig-version.cmake" "DESTINATION" "share/scootbot_description/cmake")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_core/scootbot_descriptionConfig.cmake" "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_core/scootbot_descriptionConfig-version.cmake" "DESTINATION" "share/scootbot_description/cmake")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_core/scootbot_descriptionConfig.cmake" "/home/ubuntu/scootbot/1.0.0/build/scootbot_description/ament_cmake_core/scootbot_descriptionConfig-version.cmake" "DESTINATION" "share/scootbot_description/cmake")
 
-# install(FILES "/home/ubuntu/scootbot/src/scootbot_description/package.xml" "DESTINATION" "share/scootbot_description")
-ament_cmake_symlink_install_files("/home/ubuntu/scootbot/src/scootbot_description" FILES "/home/ubuntu/scootbot/src/scootbot_description/package.xml" "DESTINATION" "share/scootbot_description")
+# install(FILES "/home/ubuntu/scootbot/1.0.0/src/scootbot_description/package.xml" "DESTINATION" "share/scootbot_description")
+ament_cmake_symlink_install_files("/home/ubuntu/scootbot/1.0.0/src/scootbot_description" FILES "/home/ubuntu/scootbot/1.0.0/src/scootbot_description/package.xml" "DESTINATION" "share/scootbot_description")

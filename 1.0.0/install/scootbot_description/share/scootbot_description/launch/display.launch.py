@@ -1,1 +1,1 @@
-/home/ubuntu/scootbot/src/scootbot_description/launch/display.launch.py
+/home/ubuntu/scootbot/1.0.0/src/scootbot_description/launch/display.launch.py
