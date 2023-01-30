@@ -2,7 +2,7 @@
 
 source install/setup.sh
 # SIM
-ros2 launch scootbot scootbot_sim.launch.py use_ros2_control:=true use_sim_time:=true & 
+#ros2 launch scootbot scootbot_sim.launch.py use_ros2_control:=true use_sim_time:=true & 
 # REAL
 ros2 launch scootbot scootbot_robot.launch.py use_ros2_control:=true use_sim_time:=false & 
 

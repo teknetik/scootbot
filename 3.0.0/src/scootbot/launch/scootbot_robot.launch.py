@@ -84,13 +84,25 @@ def generate_launch_description():
         arguments=["diff_ctl"],
         condition=launch.conditions.IfCondition(LaunchConfiguration('use_ros2_control'))
     )
+
+    delayed_diff_drive_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=controller_manger,
+            on_start=[diff_drive_spawner],
+        )
+    )
     joint_broadcast_spawner = Node (
         package="controller_manager",
         executable="spawner",
         arguments=["joint_bcast"],
         condition=launch.conditions.IfCondition(LaunchConfiguration('use_ros2_control'))
     )
-
+    delayed_joint_broadcast_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=controller_manger,
+            on_start=[joint_broadcast_spawner],
+        )
+    )
     # Launch!
     return LaunchDescription([
         launch.actions.DeclareLaunchArgument(name='gui', default_value='True',
@@ -139,7 +151,7 @@ def generate_launch_description():
         joint_state_publisher_gui_node,
         delayed_controller_manager,
         rviz_node,
-        diff_drive_spawner,
-        joint_broadcast_spawner
+        delayed_diff_drive_spawner,
+        delayed_joint_broadcast_spawner
     ])
     
