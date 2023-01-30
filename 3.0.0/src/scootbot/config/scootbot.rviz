@@ -11,13 +11,24 @@ Panels:
         - /LaserScan1
         - /LaserScan1/Topic1
         - /Cost Map1
+        - /Cost Map1/Topic1
         - /Map1
+        - /Map1/Topic1
         - /Pose1
         - /Pose1/Topic1
         - /Image1
         - /Imu1
+        - /Path1
+        - /Path1/Topic1
       Splitter Ratio: 0.5
-    Tree Height: 1894
+    Tree Height: 1035
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: nav2_rviz_plugins/Navigation 2
+    Name: Navigation 2
 Visualization Manager:
   Class: ""
   Displays:
@@ -136,6 +147,8 @@ Visualization Manager:
           Value: true
         laser_frame:
           Value: true
+        map:
+          Value: true
         odom:
           Value: true
         r_link:
@@ -146,25 +159,25 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          base_footprint:
-            {}
-          caster_frame_l_link:
-            casterwhl_l_link:
-              {}
-          caster_frame_r_link:
-            casterwhl_r_link:
-              {}
-          inertial_link:
-            {}
-          l_link:
-            {}
-          laser_frame:
-            {}
-          r_link:
-            {}
-        odom:
-          {}
+        map:
+          odom:
+            base_link:
+              base_footprint:
+                {}
+              caster_frame_l_link:
+                casterwhl_l_link:
+                  {}
+              caster_frame_r_link:
+                casterwhl_r_link:
+                  {}
+              inertial_link:
+                {}
+              l_link:
+                {}
+              laser_frame:
+                {}
+              r_link:
+                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -182,14 +195,14 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: -999999
+      Max Intensity: 0
       Min Color: 0; 0; 0
-      Min Intensity: 999999
+      Min Intensity: 0
       Name: LaserScan
       Position Transformer: XYZ
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.019999999552965164
+      Size (m): 0.05000000074505806
       Style: Flat Squares
       Topic:
         Depth: 5
@@ -201,7 +214,7 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Alpha: 0.10000000149011612
+    - Alpha: 0.699999988079071
       Class: rviz_default_plugins/Map
       Color Scheme: costmap
       Draw Behind: false
@@ -209,7 +222,7 @@ Visualization Manager:
       Name: Cost Map
       Topic:
         Depth: 5
-        Durability Policy: Volatile
+        Durability Policy: Transient Local
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
@@ -230,7 +243,7 @@ Visualization Manager:
       Name: Map
       Topic:
         Depth: 5
-        Durability Policy: Volatile
+        Durability Policy: Transient Local
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
@@ -305,10 +318,38 @@ Visualization Manager:
         Value: /imu/data
       Value: false
       fixed_frame_orientation: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz_default_plugins/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 225; 255; 0
+      Pose Style: Arrows
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 20
+        History Policy: Keep Last
+        Reliability Policy: System Default
+        Value: /plan
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -352,35 +393,39 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 2.9798996448516846
+      Distance: 78.21834564208984
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.09666755050420761
-        Y: 0.5421199202537537
-        Z: 0.44922521710395813
-      Focal Shape Fixed Size: false
+        X: -0.6817675828933716
+        Y: -0.9452718496322632
+        Z: 0
+      Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.20539921522140503
+      Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 3.1635255813598633
+      Value: Orbit (rviz_default_plugins)
+      Yaw: -1.5707963705062866
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 2123
+  Height: 1583
   Hide Left Dock: false
   Hide Right Dock: false
   Image:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000200000000000002f9000007f1fc0200000001fb000000100044006900730070006c006100790073010000003d000007f1000000c900ffffff000000010000045c000007f1fc0200000001fb0000000a0049006d006100670065000000003d000007f10000002800ffffff00000c01000007f100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-  Width: 3840
-  X: 0
-  Y: 0
+  Navigation 2:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000200000000000002f9000005d5fc0200000002fb000000100044006900730070006c006100790073010000003d00000496000000c900fffffffb00000018004e0061007600690067006100740069006f006e0020003201000004d9000001390000013900ffffff0000000100000172000005d5fc0200000002fb0000000a00560069006500770073000000003d000005d5000000a400fffffffb0000000a0049006d006100670065000000003d000007f10000002800ffffff000003cd000005d500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1740
+  X: 1747
+  Y: 130

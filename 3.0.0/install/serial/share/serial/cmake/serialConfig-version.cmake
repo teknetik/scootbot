@@ -1,0 +1,1 @@
+/home/ubuntu/scootbot/3.0.0/build/serial/ament_cmake_core/serialConfig-version.cmake

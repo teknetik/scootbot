@@ -1,0 +1,1 @@
+/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/launch/fake_robot.launch.py

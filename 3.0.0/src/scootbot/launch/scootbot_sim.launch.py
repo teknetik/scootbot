@@ -66,7 +66,7 @@ def generate_launch_description():
     gazebo_params_file = os.path.join(get_package_share_directory(package_name),'config','gazebo_params.yaml')
 
     # Include the Gazebo launch file, provided by the gazebo_ros package
-    worldfile = os.path.join(get_package_share_directory(package_name),'worlds','obstacles.world')
+    worldfile = os.path.join(get_package_share_directory(package_name),'worlds','factory.world')
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
@@ -102,6 +102,7 @@ def generate_launch_description():
 
         Node(
             package='joy', executable='joy_node', name='joy_node',
+            #remappings=[('/diff_ctl/cmd_vel_unstamped', '/diff_ctl/cmd_vel')],
             parameters=[{
                 'dev': joy_dev,
                 'deadzone': 0.4,

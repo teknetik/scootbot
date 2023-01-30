@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "config" "description" "launch" "worlds" "maps" "DESTINATION" "share/scootbot")
-ament_cmake_symlink_install_directory("/home/ubuntu/scootbot/3.0.0/src/scootbot" DIRECTORY "config" "description" "launch" "worlds" "maps" "DESTINATION" "share/scootbot")
+# install(DIRECTORY "config" "description" "launch" "worlds" "maps" "models" "DESTINATION" "share/scootbot")
+ament_cmake_symlink_install_directory("/home/ubuntu/scootbot/3.0.0/src/scootbot" DIRECTORY "config" "description" "launch" "worlds" "maps" "models" "DESTINATION" "share/scootbot")
 
 # install(FILES "/home/ubuntu/scootbot/3.0.0/build/scootbot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/scootbot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ubuntu/scootbot/3.0.0/src/scootbot" FILES "/home/ubuntu/scootbot/3.0.0/build/scootbot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/scootbot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

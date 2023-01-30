@@ -1,0 +1,1 @@
+/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino/ament_cmake_environment_hooks/local_setup.bash

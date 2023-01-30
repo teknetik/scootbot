@@ -16,7 +16,7 @@
   <xacro:property name="wheel_zoff" value="0.01"/>
   <xacro:property name="wheel_xoff" value="0.20"/>
   
-  <xacro:property name="caster_radius" value="0.071"/>
+  <!-- <xacro:property name="caster_radius" value="0.08"/> -->
   <xacro:property name="caster_width" value="0.047"/>
   <xacro:property name="caster_ygap" value="-0.285"/>
   <xacro:property name="caster_zoff" value="0.0985"/>
@@ -105,7 +105,7 @@
      <collision>
         <origin xyz="${col_x} ${col_y} ${col_z}" rpy="${pi/2} 0 ${mirror} "/>
         <geometry>
-            <cylinder radius="0.14" length="0.09"/>
+            <cylinder radius="0.13" length="0.09"/>
         </geometry>
         <material name="Gray">
           <color rgba="0.5 0.5 0.5 1.0"/>
@@ -138,8 +138,9 @@
 <xacro:macro name="caster_frame" params="prefix x_reflect y_reflect">
 
     <link name="caster_frame_${prefix}_link">
+
       <visual>
-        <origin xyz="0.22 -0.005 0.075" rpy="0 0 0"/>
+        <origin xyz="0.22 -0.005 0.074" rpy="0 0 0"/>
         <geometry>
             <mesh filename="file:///$(find scootbot)/description/models/caster_frame.obj" scale="0.001 0.001 0.001"/>
         </geometry>
@@ -166,9 +167,9 @@
     </joint>
     
     <gazebo reference="caster_frame_${prefix}_link">
-      <mu1 value="1.0"/>
-			<mu2 value="1.0"/>
-			<kp value="10000000.0" />
+      <mu1 value="0.7"/>
+			<mu2 value="0.9"/>
+			<kp value="2.0" />
 			<kd value="1.0" />
 			<fdir1 value="1 0 0"/>
     </gazebo>
@@ -179,11 +180,17 @@
 <xacro:caster_frame prefix="r" x_reflect="1" y_reflect="0.1752"/>
 
 <!-- Caster Wheels -->
-  <xacro:macro name="caster_wheel" params="prefix x_reflect y_reflect">
+  <xacro:macro name="caster_wheel" params="prefix x_reflect y_reflect caster_radius">
     <link name="casterwhl_${prefix}_link">
       <visual>
+              <contact>
+      <lateral_friction value="1.0"/>
+      <rolling_friction value="1.0"/>
+      <stiffness value="30000"/>
+      <damping value="1000"/>
+    </contact>
         <!-- <origin xyz="0.22 -0.165 -0.01" rpy="${pi/2} 0 0"/> -->
-        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <origin xyz="0 0 0.0" rpy="${pi/2} 0 0"/>
         <geometry>
             <cylinder radius="${caster_radius}" length="${caster_width}"/>
         </geometry>
@@ -194,7 +201,7 @@
      <collision>
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
         <geometry>
-          <cylinder radius="0.075" length="0.05"/>
+          <cylinder radius="${caster_radius}" length="0.05"/>
           <!-- <sphere radius="0.1"/> -->
         </geometry>
       </collision>
@@ -213,8 +220,8 @@
     </joint>
 
     <gazebo reference="casterwhl_${prefix}_link">
-      <mu1 value="1.0"/>
-			<mu2 value="1.0"/>
+      <mu1 value="2000.0"/>
+			<mu2 value="1000.0"/>
 			<kp value="10000000.0" />
 			<kd value="1.0" />
 			<fdir1 value="1 0 0"/>
@@ -222,8 +229,8 @@
 
   </xacro:macro> 
 
-  <xacro:caster_wheel prefix="l" x_reflect="1" y_reflect="0.47"/>
-  <xacro:caster_wheel prefix="r" x_reflect="1" y_reflect="-0.47"/>
+  <xacro:caster_wheel prefix="l" x_reflect="1" y_reflect="0.47" caster_radius="0.0721"/>
+  <xacro:caster_wheel prefix="r" x_reflect="1" y_reflect="-0.47" caster_radius="0.072"/>
 
  <joint name="laser_joint" type="fixed">
         <parent link="base_link"/>
