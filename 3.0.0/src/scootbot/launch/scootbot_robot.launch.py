@@ -76,7 +76,7 @@ def generate_launch_description():
         condition=launch.conditions.IfCondition(LaunchConfiguration('use_ros2_control'))
     )
 
-    delayed_controller_manager = TimerAction(persiod=3.0, actions=[controller_manger])
+    delayed_controller_manager = TimerAction(period=3.0, actions=[controller_manger])
 
     diff_drive_spawner = Node (
         package="controller_manager",
