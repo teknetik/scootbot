@@ -150,7 +150,7 @@ def generate_launch_description():
         joint_state_publisher_node,
         joint_state_publisher_gui_node,
         delayed_controller_manager,
-        rviz_node,
+        #rviz_node,
         delayed_diff_drive_spawner,
         delayed_joint_broadcast_spawner
     ])
