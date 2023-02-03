@@ -148,7 +148,7 @@ def generate_launch_description():
             ),
         rsp,
         joint_state_publisher_node,
-        joint_state_publisher_gui_node,
+        #joint_state_publisher_gui_node,
         delayed_controller_manager,
         #rviz_node,
         delayed_diff_drive_spawner,
