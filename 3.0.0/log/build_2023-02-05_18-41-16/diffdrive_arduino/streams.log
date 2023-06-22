@@ -1,0 +1,16 @@
+[0.017s] Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.127s] [ 42%] Built target fake_robot
+[0.156s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[6.049s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::readEncoderValues(int&, int&)[m[K’:
+[6.050s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+[6.050s]    28 |     [01;31m[Klogger_[m[K(rclcpp::get_logger("DiffDriveArduino"))
+[6.050s]       |     [01;31m[K^~~~~~~[m[K
+[6.058s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:32:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ was not declared in this scope; did you mean ‘[01m[Kmotor2[m[K’?
+[6.059s]    32 |     val_1 = std::atoi([01;31m[Kmotor1[m[K.c_str());
+[6.059s]       |                       [01;31m[K^~~~~~[m[K
+[6.059s]       |                       [32m[Kmotor2[m[K
+[7.146s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+[7.147s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[7.148s] gmake: *** [Makefile:146: all] Error 2
+[7.152s] Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4

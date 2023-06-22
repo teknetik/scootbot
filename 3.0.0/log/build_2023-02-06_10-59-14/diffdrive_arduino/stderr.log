@@ -1,0 +1,21 @@
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:32:26:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   32 |     std::string motor1 = [01;35m[K'1,P123'[m[K
+      |                          [01;35m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:33:26:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   33 |     std::string motor2 = [01;35m[K'2,P567'[m[K
+      |                          [01;35m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::readEncoderValues(int&, int&)[m[K’:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:32:26:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kint[m[K’ to non-scalar type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} requested
+   32 |     std::string motor1 = [01;31m[K'1,P123'[m[K
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:36:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ was not declared in this scope; did you mean ‘[01m[Kmotor1[m[K’?
+   36 |     std::string stripped_motor2 = [01;31m[Kmotor2[m[K.substr(3);
+      |                                   [01;31m[K^~~~~~[m[K
+      |                                   [32m[Kmotor1[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:37:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstripped_motor1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstripped_motor2[m[K’?
+   37 |     val_1 = std::atoi([01;31m[Kstripped_motor1[m[K.c_str());
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                       [32m[Kstripped_motor2[m[K
+gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

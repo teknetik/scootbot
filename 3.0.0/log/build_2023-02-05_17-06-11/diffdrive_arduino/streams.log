@@ -1,0 +1,46 @@
+[0.017s] Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[0.097s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.132s] [ 42%] Built target fake_robot
+[0.151s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[0.152s] [ 71%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[6.435s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.436s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.437s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.437s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.437s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.440s]                  from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:5[m[K,
+[6.441s]                  from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1[m[K:
+[6.442s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type diffdrive_arduino::DiffDriveArduino::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[6.442s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:118:24:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[6.443s]   118 |   RCLCPP_INFO(logger_, [01;35m[K"l_wheel_enc: %s"[m[K, [32m[Kl_wheel_.enc[m[K);
+[6.444s]       |                        [01;35m[K^~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~[m[K
+[6.444s]       |                                                    [32m[K|[m[K
+[6.444s]       |                                                    [32m[Kint[m[K
+[6.445s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:118:39:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[6.445s]   118 |   RCLCPP_INFO(logger_, "l_wheel_enc: [01;36m[K%s[m[K", l_wheel_.enc);
+[6.445s]       |                                      [01;36m[K~^[m[K
+[6.446s]       |                                       [01;36m[K|[m[K
+[6.446s]       |                                       [01;36m[Kchar*[m[K
+[6.446s]       |                                      [32m[K%d[m[K
+[6.595s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::readEncoderValues(int&, int&)[m[K’:
+[6.595s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:32:25:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Kint[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.596s]    32 |     val_1 = [01;31m[Kmotor1.c_str()[m[K;
+[6.596s]       |             [01;31m[K~~~~~~~~~~~~^~[m[K
+[6.597s]       |                         [01;31m[K|[m[K
+[6.597s]       |                         [01;31m[Kconst char*[m[K
+[6.597s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:33:25:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Kint[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.598s]    33 |     val_2 = [01;31m[Kmotor2.c_str()[m[K;
+[6.598s]       |             [01;31m[K~~~~~~~~~~~~^~[m[K
+[6.599s]       |                         [01;31m[K|[m[K
+[6.599s]       |                         [01;31m[Kconst char*[m[K
+[7.765s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+[7.765s] gmake[2]: *** Waiting for unfinished jobs....
+[9.099s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[9.100s] gmake: *** [Makefile:146: all] Error 2
+[9.103s] Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4

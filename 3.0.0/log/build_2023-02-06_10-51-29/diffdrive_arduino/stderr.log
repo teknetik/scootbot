@@ -1,0 +1,16 @@
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::readEncoderValues(int&, int&)[m[K’:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:32:10:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kint[m[K’
+   32 |     std::[01;31m[Kint[m[K stripped_motor1 = motor1.substr(3);
+      |          [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:33:10:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kint[m[K’
+   33 |     std::[01;31m[Kint[m[K stripped_motor2 = motor2.substr(3);
+      |          [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:34:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstripped_motor1[m[K’ was not declared in this scope
+   34 |     val_1 = std::atoi([01;31m[Kstripped_motor1[m[K);
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:35:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstripped_motor2[m[K’ was not declared in this scope
+   35 |     val_2 = std::atoi([01;31m[Kstripped_motor2[m[K);
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

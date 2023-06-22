@@ -1,0 +1,42 @@
+[0.017s] Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[0.099s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.139s] [ 42%] Built target fake_robot
+[0.158s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[5.672s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[5.672s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[5.672s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[5.672s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[5.672s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[5.673s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[5.673s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[5.673s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[5.673s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[5.673s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[5.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.674s]                  from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:5[m[K,
+[5.674s]                  from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1[m[K:
+[5.674s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type diffdrive_arduino::DiffDriveArduino::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[5.675s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:118:38:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+[5.675s]   118 |   RCLCPP_INFO(logger_, [01;31m[Kstd::to_string(l_wheel_.enc)[m[K);
+[5.675s]       |                        [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[5.675s]       |                                      [01;31m[K|[m[K
+[5.675s]       |                                      [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[5.676s] In file included from [01m[K/opt/ros/humble/include/rmw/rmw/types.h:28[m[K,
+[5.676s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/types.h:20[m[K,
+[5.676s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/log_level.h:22[m[K,
+[5.676s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/arguments.h:21[m[K,
+[5.676s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/context.h:28[m[K,
+[5.677s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/guard_condition.h:26[m[K,
+[5.677s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30[m[K,
+[5.677s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[5.677s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[5.677s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.677s]                  from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:5[m[K,
+[5.678s]                  from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1[m[K:
+[5.678s] [01m[K/opt/ros/humble/include/rcutils/rcutils/logging.h:479:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+[5.678s]   479 |   [01;36m[Kconst char * format[m[K,
+[5.678s]       |   [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+[7.035s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o] Error 1
+[7.035s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[7.036s] gmake: *** [Makefile:146: all] Error 2
+[7.039s] Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4

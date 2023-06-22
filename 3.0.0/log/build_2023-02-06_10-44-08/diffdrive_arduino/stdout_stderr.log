@@ -1,0 +1,12 @@
+[ 42%] Built target fake_robot
+[ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::readEncoderValues(int&, int&)[m[K’:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:34:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstripped_motor1[m[K’ was not declared in this scope
+   34 |     val_1 = std::atoi([01;31m[Kstripped_motor1[m[K.c_str());
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:35:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstripped_motor2[m[K’ was not declared in this scope
+   35 |     val_2 = std::atoi([01;31m[Kstripped_motor2[m[K.c_str());
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

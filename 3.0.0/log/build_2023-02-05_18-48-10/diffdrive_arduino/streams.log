@@ -1,0 +1,11 @@
+[0.016s] Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.134s] [ 42%] Built target fake_robot
+[0.148s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[0.692s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:32:73:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K#[m[K’ in program
+[0.693s]    32 |     std::string stripped_motor1 = motor1.substr(2, motor1.length() - 3);[01;31m[K#[m[K
+[0.694s]       |                                                                         [01;31m[K^[m[K
+[7.221s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+[7.222s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[7.222s] gmake: *** [Makefile:146: all] Error 2
+[7.225s] Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4

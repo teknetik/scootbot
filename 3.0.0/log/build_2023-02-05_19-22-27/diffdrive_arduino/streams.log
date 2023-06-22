@@ -1,0 +1,18 @@
+[0.045s] Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[0.135s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.165s] [ 42%] Built target fake_robot
+[0.187s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[6.370s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type diffdrive_arduino::DiffDriveArduino::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[6.370s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:136:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KArduinoComms::setMotorValues(double)[m[K’
+[6.371s]   136 |   [01;31m[Karduino_.setMotorValues(round(l_wheel_.cmd / 9 * 100))[m[K, round(r_wheel_.cmd / 9 * 100));
+[6.371s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.371s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:15[m[K,
+[6.372s]                  from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1[m[K:
+[6.372s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ArduinoComms::setMotorValues(int, int)[m[K’
+[6.372s]    24 |   void [01;36m[KsetMotorValues[m[K(int val_1, int val_2);
+[6.373s]       |        [01;36m[K^~~~~~~~~~~~~~[m[K
+[6.373s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h:24:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[7.871s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o] Error 1
+[7.872s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[7.872s] gmake: *** [Makefile:146: all] Error 2
+[7.875s] Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/scootbot/3.0.0/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
