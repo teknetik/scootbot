@@ -1,0 +1,47 @@
+[0.023s] Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.159s] [ 14%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[0.169s] [ 28%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/wheel.cpp.o[0m
+[0.171s] [ 42%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+[0.180s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[1.238s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[1.238s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:7:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/base_interface.hpp: No such file or directory
+[1.239s]     7 | #include [01;31m[K"hardware_interface/base_interface.hpp"[m[K
+[1.239s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.239s] compilation terminated.
+[1.245s] gmake[2]: *** [CMakeFiles/fake_robot.dir/build.make:76: CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o] Error 1
+[1.246s] gmake[2]: *** Waiting for unfinished jobs....
+[1.263s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1[m[K:
+[1.264s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:7:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/base_interface.hpp: No such file or directory
+[1.264s]     7 | #include [01;31m[K"hardware_interface/base_interface.hpp"[m[K
+[1.265s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.265s] compilation terminated.
+[1.271s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o] Error 1
+[1.272s] gmake[2]: *** Waiting for unfinished jobs....
+[1.727s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/fake_robot.dir/all] Error 2
+[1.728s] gmake[1]: *** Waiting for unfinished jobs....
+[7.492s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::readEncoderValues(int&, int&)[m[K’:
+[7.493s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:30:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+[7.493s]    30 |     [01;31m[Kstd[m[K::string stripped_motor1 = motor1.substr(3);
+[7.493s]       |     [01;31m[K^~~[m[K
+[7.505s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:33:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstripped_motor1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstripped_motor2[m[K’?
+[7.505s]    33 |     val_1 = std::atoi([01;31m[Kstripped_motor1[m[K.c_str());
+[7.506s]       |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.506s]       |                       [32m[Kstripped_motor2[m[K
+[7.507s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K At global scope:
+[7.507s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:54:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid ArduinoComms::start()[m[K’
+[7.508s]    54 | void [01;31m[KArduinoComms[m[K::start()
+[7.508s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[7.508s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:54:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid ArduinoComms::start()[m[K’
+[7.509s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:1[m[K:
+[7.509s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h:7:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ArduinoComms[m[K’ defined here
+[7.509s]     7 | class [01;36m[KArduinoComms[m[K
+[7.510s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[7.510s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kstd::string ArduinoComms::sendMsg(const string&, bool)[m[K’:
+[7.510s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:73:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprint_output[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.511s]    73 | std::string ArduinoComms::sendMsg(const std::string &msg_to_send, [01;35m[Kbool print_output[m[K)
+[7.511s]       |                                                                   [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[8.615s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+[8.616s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[8.616s] gmake: *** [Makefile:146: all] Error 2
+[8.619s] Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4

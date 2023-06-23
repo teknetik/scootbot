@@ -1,0 +1,61 @@
+-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found serial: 1.2.1 (/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/cmake)
+-- Found hardware_interface: 2.20.0 (/opt/ros/humble/share/hardware_interface/cmake)
+-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found controller_manager: 2.20.0 (/opt/ros/humble/share/controller_manager/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino
+[35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[35m[1mConsolidate compiler generated dependencies of target fake_robot[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:7:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/base_interface.hpp: No such file or directory
+    7 | #include [01;31m[K"hardware_interface/base_interface.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/fake_robot.dir/build.make:76: CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/fake_robot.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1[m[K:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:7:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/base_interface.hpp: No such file or directory
+    7 | #include [01;31m[K"hardware_interface/base_interface.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::readEncoderValues(int&, int&)[m[K’:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:30:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   30 |     [01;31m[Kstd[m[K::string stripped_motor1 = motor1.substr(3);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:33:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstripped_motor1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstripped_motor2[m[K’?
+   33 |     val_1 = std::atoi([01;31m[Kstripped_motor1[m[K.c_str());
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                       [32m[Kstripped_motor2[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:54:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid ArduinoComms::start()[m[K’
+   54 | void [01;31m[KArduinoComms[m[K::start()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:54:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid ArduinoComms::start()[m[K’
+In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:1[m[K:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h:7:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ArduinoComms[m[K’ defined here
+    7 | class [01;36m[KArduinoComms[m[K
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kstd::string ArduinoComms::sendMsg(const string&, bool)[m[K’:
+[01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:73:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprint_output[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   73 | std::string ArduinoComms::sendMsg(const std::string &msg_to_send, [01;35m[Kbool print_output[m[K)
+      |                                                                   [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

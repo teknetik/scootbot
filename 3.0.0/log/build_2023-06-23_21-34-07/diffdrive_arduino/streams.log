@@ -1,0 +1,116 @@
+[0.071s] Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[0.156s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.170s] [35m[1mConsolidate compiler generated dependencies of target fake_robot[0m
+[0.209s] [ 14%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[0.213s] [ 28%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[0.248s] [ 42%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+[1.184s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1[m[K:
+[1.184s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:7:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/base_interface.hpp: No such file or directory
+[1.185s]     7 | #include [01;31m[K"hardware_interface/base_interface.hpp"[m[K
+[1.185s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.185s] compilation terminated.
+[1.192s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o] Error 1
+[1.192s] gmake[2]: *** Waiting for unfinished jobs....
+[7.559s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::readEncoderValues(int&, int&)[m[K’:
+[7.560s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:30:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+[7.560s]    30 |     [01;31m[Kstd[m[K::string stripped_motor1 = motor1.substr(3);
+[7.560s]       |     [01;31m[K^~~[m[K
+[7.574s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:33:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstripped_motor1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstripped_motor2[m[K’?
+[7.575s]    33 |     val_1 = std::atoi([01;31m[Kstripped_motor1[m[K.c_str());
+[7.575s]       |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.575s]       |                       [32m[Kstripped_motor2[m[K
+[7.577s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K At global scope:
+[7.577s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:54:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid ArduinoComms::start()[m[K’
+[7.578s]    54 | void [01;31m[KArduinoComms[m[K::start()
+[7.578s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[7.579s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:54:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid ArduinoComms::start()[m[K’
+[7.579s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:1[m[K:
+[7.579s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h:7:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ArduinoComms[m[K’ defined here
+[7.580s]     7 | class [01;36m[KArduinoComms[m[K
+[7.580s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[7.581s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:[m[K In member function ‘[01m[Kstd::string ArduinoComms::sendMsg(const string&, bool)[m[K’:
+[7.581s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:73:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprint_output[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.582s]    73 | std::string ArduinoComms::sendMsg(const std::string &msg_to_send, [01;35m[Kbool print_output[m[K)
+[7.582s]       |                                                                   [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[8.805s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+[8.805s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[8.805s] gmake[1]: *** Waiting for unfinished jobs....
+[9.571s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.572s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:59:[m[K [01;31m[Kerror: [m[Kexpected template-name before ‘[01m[K<[m[K’ token
+[9.572s]    18 | class FakeRobot : public hardware_interface::BaseInterface[01;31m[K<[m[Khardware_interface::SystemInterface>
+[9.573s]       |                                                           [01;31m[K^[m[K
+[9.573s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K<[m[K’ token
+[9.573s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:59:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K<[m[K’ token
+[9.574s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:7:22:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[9.574s]     7 | FakeRobot::FakeRobot([01;31m[K)[m[K
+[9.574s]       |                      [01;31m[K^[m[K
+[9.575s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.575s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[9.575s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[9.576s]       |       [01;36m[K^~~~~~~~~[m[K
+[9.576s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:13:79:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[9.576s]    13 | return_type FakeRobot::configure(const hardware_interface::HardwareInfo & info[01;31m[K)[m[K
+[9.577s]       |                                                                               [01;31m[K^[m[K
+[9.577s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.580s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[9.580s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[9.580s]       |       [01;36m[K^~~~~~~~~[m[K
+[9.581s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:40:84:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[9.581s]    40 | std::vector<hardware_interface::StateInterface> FakeRobot::export_state_interfaces([01;31m[K)[m[K
+[9.581s]       |                                                                                    [01;31m[K^[m[K
+[9.582s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.582s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[9.582s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[9.583s]       |       [01;36m[K^~~~~~~~~[m[K
+[9.583s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:54:88:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[9.583s]    54 | std::vector<hardware_interface::CommandInterface> FakeRobot::export_command_interfaces([01;31m[K)[m[K
+[9.584s]       |                                                                                        [01;31m[K^[m[K
+[9.584s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.584s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[9.584s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[9.585s]       |       [01;36m[K^~~~~~~~~[m[K
+[9.585s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:67:30:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[9.585s]    67 | return_type FakeRobot::start([01;31m[K)[m[K
+[9.586s]       |                              [01;31m[K^[m[K
+[9.586s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.586s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[9.587s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[9.587s]       |       [01;36m[K^~~~~~~~~[m[K
+[9.587s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:75:29:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[9.588s]    75 | return_type FakeRobot::stop([01;31m[K)[m[K
+[9.588s]       |                             [01;31m[K^[m[K
+[9.588s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.589s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[9.589s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[9.589s]       |       [01;36m[K^~~~~~~~~[m[K
+[9.590s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:83:49:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[9.590s]    83 | hardware_interface::return_type FakeRobot::read([01;31m[K)[m[K
+[9.590s]       |                                                 [01;31m[K^[m[K
+[9.590s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.591s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[9.591s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[9.591s]       |       [01;36m[K^~~~~~~~~[m[K
+[9.592s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:104:50:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[9.592s]   104 | hardware_interface::return_type FakeRobot::write([01;31m[K)[m[K
+[9.592s]       |                                                  [01;31m[K^[m[K
+[9.593s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[9.593s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[9.593s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[9.593s]       |       [01;36m[K^~~~~~~~~[m[K
+[10.827s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57[m[K,
+[10.827s]                  from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[10.828s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[10.828s]                  from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:118[m[K:
+[10.828s] /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = FakeRobot; B = hardware_interface::SystemInterface][m[K’:
+[10.828s] [01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[10.829s] [01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass FakeRobot[m[K’
+[10.829s]   218 |     return [01;31m[Knew C[m[K;
+[10.829s]       |            [01;31m[K^~~~~[m[K
+[10.830s] In file included from [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1[m[K:
+[10.830s] [01m[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass FakeRobot[m[K’
+[10.830s]    18 | class [01;36m[KFakeRobot[m[K : public hardware_interface::BaseInterface<hardware_interface::SystemInterface>
+[10.831s]       |       [01;36m[K^~~~~~~~~[m[K
+[10.948s] gmake[2]: *** [CMakeFiles/fake_robot.dir/build.make:76: CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o] Error 1
+[10.949s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/fake_robot.dir/all] Error 2
+[10.949s] gmake: *** [Makefile:146: all] Error 2
+[10.952s] Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4

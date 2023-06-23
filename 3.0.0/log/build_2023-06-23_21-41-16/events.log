@@ -1,0 +1,747 @@
+[0.000000] (-) TimerEvent: {}
+[0.000968] (scootbot) JobQueued: {'identifier': 'scootbot', 'dependencies': OrderedDict()}
+[0.002074] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002199] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/ubuntu/scootbot/3.0.0/install/serial')])}
+[0.002436] (serial) JobStarted: {'identifier': 'serial'}
+[0.022981] (scootbot) JobStarted: {'identifier': 'scootbot'}
+[0.044431] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.045755] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.047609] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/scootbot/3.0.0/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/scootbot/3.0.0/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '10.0.0.3 47792 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib:/home/ubuntu/scootbot/3.0.0/install/serial/lib:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/diffdrive_arduino_backup/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/scootbot/3.0.0/build/serial'), ('SSH_CONNECTION', '10.0.0.3 47792 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros')]), 'shell': False}
+[0.067967] (scootbot) JobProgress: {'identifier': 'scootbot', 'progress': 'cmake'}
+[0.068130] (scootbot) JobProgress: {'identifier': 'scootbot', 'progress': 'build'}
+[0.068233] (scootbot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/scootbot/3.0.0/build/scootbot', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/scootbot/3.0.0/build/scootbot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '10.0.0.3 47792 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib:/home/ubuntu/scootbot/3.0.0/install/serial/lib:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/diffdrive_arduino_backup/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/scootbot/3.0.0/build/scootbot'), ('SSH_CONNECTION', '10.0.0.3 47792 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros')]), 'shell': False}
+[0.099239] (-) TimerEvent: {}
+[0.173814] (serial) StdoutLine: {'line': b'[ 14%] Built target gtest\n'}
+[0.181928] (serial) StdoutLine: {'line': b'[ 28%] Built target gtest_main\n'}
+[0.199368] (-) TimerEvent: {}
+[0.199968] (serial) StdoutLine: {'line': b'[ 57%] Built target serial\n'}
+[0.213679] (scootbot) CommandEnded: {'returncode': 0}
+[0.276820] (serial) StdoutLine: {'line': b'[ 71%] Built target serial_example\n'}
+[0.289472] (serial) StdoutLine: {'line': b'[ 85%] Built target serial-test-timer\n'}
+[0.299484] (-) TimerEvent: {}
+[0.303438] (scootbot) JobProgress: {'identifier': 'scootbot', 'progress': 'install'}
+[0.305293] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[0.321641] (scootbot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/scootbot/3.0.0/build/scootbot'], 'cwd': '/home/ubuntu/scootbot/3.0.0/build/scootbot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '10.0.0.3 47792 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib:/home/ubuntu/scootbot/3.0.0/install/serial/lib:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/diffdrive_arduino_backup/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/scootbot/3.0.0/build/scootbot'), ('SSH_CONNECTION', '10.0.0.3 47792 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros')]), 'shell': False}
+[0.336747] (serial) CommandEnded: {'returncode': 0}
+[0.341223] (scootbot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.343681] (scootbot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.345776] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/config/controllers.yaml\n'}
+[0.346767] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/config/gazebo_params.yaml\n'}
+[0.348144] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/config/mapper_params_localization.yaml\n'}
+[0.349448] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/config/mapper_params_online_async.yaml\n'}
+[0.350433] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/config/nav2_params.yaml\n'}
+[0.351296] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/config/ps3.config.yaml\n'}
+[0.352203] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/config/scootbot.rviz\n'}
+[0.353584] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/config/scootbot_ros2_control.rviz\n'}
+[0.354727] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/gazebo_control.xacro\n'}
+[0.355189] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/inertial_macros.xacro\n'}
+[0.355663] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/lidar.xacro\n'}
+[0.356116] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/model.xacro\n'}
+[0.356618] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/models/caster_frame.obj\n'}
+[0.357054] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/models/frame.stl\n'}
+[0.357465] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/models/tyre.obj\n'}
+[0.358054] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/ros2_control.xacro\n'}
+[0.358408] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/description/scootbot.urdf\n'}
+[0.359060] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/humble_navigation_launch.py\n'}
+[0.360687] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/localization_launch.py\n'}
+[0.364506] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/map_server_launch.py\n'}
+[0.365163] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/navigation_launch.py\n'}
+[0.365686] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/online_async_launch.py\n'}
+[0.366167] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/rsp.launch.py\n'}
+[0.366927] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/scootbot_robot.launch.py\n'}
+[0.367303] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/scootbot_sim.launch.py\n'}
+[0.367745] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/launch/slam_localization_launch.py\n'}
+[0.370468] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/aruco.world\n'}
+[0.371139] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/ball.world\n'}
+[0.371730] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/cabinet_grasping.world\n'}
+[0.372110] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/calibration_room.world\n'}
+[0.372937] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/chairs.world\n'}
+[0.373298] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/corridor_110cm.world\n'}
+[0.373769] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/corridor_60cm.world\n'}
+[0.374120] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/corridor_70cm.world\n'}
+[0.374603] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/corridor_85cm.world\n'}
+[0.374929] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/dock_and_aruco.world\n'}
+[0.375398] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/dock_station.world\n'}
+[0.375782] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/docker_chair.world\n'}
+[0.376664] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/door_obstacle.world\n'}
+[0.377093] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/empty.world\n'}
+[0.377563] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/empty_room.world\n'}
+[0.378041] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/factory.world\n'}
+[0.378769] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/featured.world\n'}
+[0.381093] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/footstep_obstacle.world\n'}
+[0.381703] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/hit_table.world\n'}
+[0.382183] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/home.world\n'}
+[0.382734] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/hospital.world\n'}
+[0.383548] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/hospital_flat.world\n'}
+[0.384121] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/look_to_point.world\n'}
+[0.384723] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/low_sun_empty.world\n'}
+[0.385515] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/memmo_simple.world\n'}
+[0.386110] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/narrow_passage.world\n'}
+[0.386609] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/objects_on_table.world\n'}
+[0.387087] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/obstacles.world\n'}
+[0.387830] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/pal_office.world\n'}
+[0.388189] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/pal_textured_object.world\n'}
+[0.388627] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/passage_110cm.world\n'}
+[0.389075] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/passage_60cm.world\n'}
+[0.389606] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/passage_70cm.world\n'}
+[0.390091] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/pg_demo.world\n'}
+[0.390880] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/pick.world\n'}
+[0.391383] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/pick_place_cabinet.world\n'}
+[0.391886] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/pick_place_close_demo.world\n'}
+[0.392459] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/pick_place_demo.world\n'}
+[0.393429] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/reemc.world\n'}
+[0.393850] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/reemc_indoor.world\n'}
+[0.394236] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/simple_office.world\n'}
+[0.394713] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/simple_office_with_people.world\n'}
+[0.395387] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/simple_ramp.world\n'}
+[0.396865] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/small_city.world\n'}
+[0.397298] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/small_factory.world\n'}
+[0.397798] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/small_office.world\n'}
+[0.398444] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/small_office_door_obstacle.world\n'}
+[0.399477] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/small_office_inventory.world\n'}
+[0.400038] (-) TimerEvent: {}
+[0.400784] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/small_textured_office.world\n'}
+[0.401635] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/socmcs.world\n'}
+[0.402121] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/stairs.world\n'}
+[0.402639] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/stamping_demo.world\n'}
+[0.403445] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/t_shaped.world\n'}
+[0.403908] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/tabletop_cube.world\n'}
+[0.404386] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/tabletop_cylinder.world\n'}
+[0.404841] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/tutorial_office.world\n'}
+[0.405310] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/voronoi_graph.world\n'}
+[0.406121] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/willow_garage.world\n'}
+[0.406509] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/worlds/world_wall_REEM_photo.world\n'}
+[0.406834] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/factory_map.pgm\n'}
+[0.407201] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/factory_map.yaml\n'}
+[0.407839] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/factory_map_serial.data\n'}
+[0.408252] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/factory_map_serial.posegraph\n'}
+[0.408591] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/obstacle_map.pgm\n'}
+[0.408977] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/obstacle_map.yaml\n'}
+[0.409599] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/obstacle_serial_map.data\n'}
+[0.410004] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/obstacle_serial_map.posegraph\n'}
+[0.410327] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/obstacles.pgm\n'}
+[0.410706] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/obstacles.yaml\n'}
+[0.411069] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/turtlebot3_world.pgm\n'}
+[0.411708] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/maps/turtlebot3_world.yaml\n'}
+[0.422900] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/arm_chair/arm_chair.sdf\n'}
+[0.423570] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/arm_chair/meshes/arm_chair.stl\n'}
+[0.424128] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/arm_chair/model.config\n'}
+[0.424477] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_board/aruco_board.sdf\n'}
+[0.426225] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_board/material/scripts/aruco_board.material\n'}
+[0.426873] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_board/material/textures/aruco_board.png\n'}
+[0.427362] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_board/model.config\n'}
+[0.427817] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_cube/aruco_cube.sdf\n'}
+[0.428625] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_cube/meshes/aruco_cube_5cm.dae\n'}
+[0.429151] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_cube/meshes/aruco_cube_6cm.dae\n'}
+[0.429610] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_cube/meshes/aruco_cube_8cm.dae\n'}
+[0.430058] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_cube/meshes/marker582.png\n'}
+[0.433503] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_cube/meshes/marker582_small_margin.png\n'}
+[0.434025] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_cube/model.config\n'}
+[0.434523] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_1/aruco_marker_250_6x6.sdf\n'}
+[0.435309] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_1/material/scripts/aruco_marker_250_6x6.material\n'}
+[0.437109] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_1/material/textures/Aruco_6x6_250_0.png\n'}
+[0.438316] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_1/model.config\n'}
+[0.438684] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_2/aruco_marker_250_6x6.sdf\n'}
+[0.439049] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_2/material/scripts/aruco_marker_250_6x6.material\n'}
+[0.439415] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_2/material/textures/Aruco_6x6_250_1.png\n'}
+[0.439797] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[0.439924] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_2/model.config\n'}
+[0.440580] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_3/aruco_marker_250_6x6.sdf\n'}
+[0.440982] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/scootbot/3.0.0/build/serial'], 'cwd': '/home/ubuntu/scootbot/3.0.0/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '10.0.0.3 47792 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib:/home/ubuntu/scootbot/3.0.0/install/serial/lib:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/diffdrive_arduino_backup/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/scootbot/3.0.0/build/serial'), ('SSH_CONNECTION', '10.0.0.3 47792 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros')]), 'shell': False}
+[0.443643] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_3/material/scripts/aruco_marker_250_6x6.material\n'}
+[0.444071] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_3/material/textures/Aruco_6x6_250_2.png\n'}
+[0.444530] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_3/model.config\n'}
+[0.452263] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_4/aruco_marker_250_6x6.sdf\n'}
+[0.453065] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_4/material/scripts/aruco_marker_250_6x6.material\n'}
+[0.453470] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_4/material/textures/Aruco_6x6_250_3.png\n'}
+[0.453972] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_250_6x6_4/model.config\n'}
+[0.454450] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_238/aruco_marker_6cm.sdf\n'}
+[0.454893] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_238/material/scripts/aruco_marker_original.material\n'}
+[0.455531] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_238/material/textures/Aruco_6cm_238.png\n'}
+[0.456031] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_238/model.config\n'}
+[0.456500] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_26/aruco_marker_6cm.sdf\n'}
+[0.456867] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_26/material/scripts/aruco_marker_original.material\n'}
+[0.457346] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_26/material/textures/Aruco_6cm_26.png\n'}
+[0.457696] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_26/model.config\n'}
+[0.458297] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_582/aruco_marker_6cm.sdf\n'}
+[0.458769] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_582/material/scripts/aruco_marker_original.material\n'}
+[0.460460] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_582/material/textures/Aruco_6cm_582.png\n'}
+[0.461169] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_582/model.config\n'}
+[0.461800] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_63/aruco_marker_6cm.sdf\n'}
+[0.462405] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_63/material/scripts/aruco_marker_original.material\n'}
+[0.463067] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_63/material/textures/Aruco_6cm_63.png\n'}
+[0.463632] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_6cm_63/model.config\n'}
+[0.464289] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_238/aruco_marker_9cm.sdf\n'}
+[0.464904] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_238/material/scripts/aruco_marker_original.material\n'}
+[0.465742] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_238/material/textures/Aruco_9cm_238.png\n'}
+[0.466386] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_238/model.config\n'}
+[0.467032] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_26/aruco_marker_9cm.sdf\n'}
+[0.467588] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_26/material/scripts/aruco_marker_original.material\n'}
+[0.468131] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_26/material/textures/Aruco_9cm_26.png\n'}
+[0.468720] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_26/model.config\n'}
+[0.469318] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_582/aruco_marker_9cm.sdf\n'}
+[0.469838] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_582/material/scripts/aruco_marker_original.material\n'}
+[0.470380] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_582/material/textures/Aruco_9cm_582.png\n'}
+[0.470842] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_582/model.config\n'}
+[0.471399] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_63/aruco_marker_9cm.sdf\n'}
+[0.471980] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_63/material/scripts/aruco_marker_original.material\n'}
+[0.472557] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_63/material/textures/Aruco_9cm_63.png\n'}
+[0.473078] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_9cm_63/model.config\n'}
+[0.473671] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_238/aruco_marker_original.sdf\n'}
+[0.475606] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_238/material/scripts/aruco_marker_original.material\n'}
+[0.476231] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_238/material/textures/Aruco_original_238.png\n'}
+[0.476759] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_238/model.config\n'}
+[0.477316] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_26/aruco_marker_original.sdf\n'}
+[0.477772] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_26/material/scripts/aruco_marker_original.material\n'}
+[0.478240] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_26/material/textures/Aruco_original_26.png\n'}
+[0.478491] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_26/model.config\n'}
+[0.478728] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_582/aruco_marker_original.sdf\n'}
+[0.479011] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_582/material/scripts/aruco_marker_original.material\n'}
+[0.479275] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_582/material/textures/Aruco_original_582.png\n'}
+[0.479515] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_582/model.config\n'}
+[0.479794] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_63/aruco_marker_original.sdf\n'}
+[0.479977] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_63/material/scripts/aruco_marker_original.material\n'}
+[0.480235] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_63/material/textures/Aruco_original_63.png\n'}
+[0.480458] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.480743] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/aruco_marker_original_63/model.config\n'}
+[0.481027] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bauman/README\n'}
+[0.481225] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bauman/bauman_walls.png\n'}
+[0.481558] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bauman/model.config\n'}
+[0.481781] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.482052] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bauman/model.sdf\n'}
+[0.482303] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bench/bench.sdf\n'}
+[0.482507] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/lib/libserial.a\n'}
+[0.482789] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bench/meshes/bench.stl\n'}
+[0.482965] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bench/model.config\n'}
+[0.483243] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bifrutas_tropical_can/bifrutas_tropical_can.sdf\n'}
+[0.483492] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/include/serial/serial.h\n'}
+[0.483669] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bifrutas_tropical_can/material/scripts/bifrutas_tropical_can.material\n'}
+[0.483875] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/include/serial/v8stdint.h\n'}
+[0.484064] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bifrutas_tropical_can/material/textures/bifrutas_tropical_can.jpg\n'}
+[0.484274] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/environment/library_path.sh\n'}
+[0.484472] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/bifrutas_tropical_can/model.config\n'}
+[0.484695] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/environment/library_path.dsv\n'}
+[0.484882] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/biscuits_pack/biscuits_pack.sdf\n'}
+[0.485073] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/biscuits_pack/material/scripts/pringles.material\n'}
+[0.485246] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[0.485419] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/biscuits_pack/material/textures/biscuits_pack.jpg\n'}
+[0.485637] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[0.485812] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/biscuits_pack/model.config\n'}
+[0.485984] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[0.486183] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/box_with_handles/box_with_handles.sdf\n'}
+[0.486356] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/box_with_handles/material/scripts/aruco_marker_original.material\n'}
+[0.486528] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[0.486750] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/box_with_handles/material/textures/Aruco_original_582.png\n'}
+[0.486924] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/environment/path.sh\n'}
+[0.487096] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/box_with_handles/model.config\n'}
+[0.487296] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/environment/path.dsv\n'}
+[0.487487] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/brick_box_3x1x3/materials/scripts/brick_box.material\n'}
+[0.488246] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/brick_box_3x1x3/materials/textures/simple_box.png\n'}
+[0.488807] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/brick_box_3x1x3/meshes/simple_box.dae\n'}
+[0.489007] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/brick_box_3x1x3/model-1_3.sdf\n'}
+[0.489251] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/local_setup.bash\n'}
+[0.489545] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/brick_box_3x1x3/model-1_4.sdf\n'}
+[0.489797] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/local_setup.sh\n'}
+[0.490011] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/brick_box_3x1x3/model.config\n'}
+[0.490187] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/local_setup.zsh\n'}
+[0.490360] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/brick_box_3x1x3/model.sdf\n'}
+[0.490558] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/local_setup.dsv\n'}
+[0.490729] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_02/images/_01_-_Default1noCulling.JPG\n'}
+[0.490904] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.dsv\n'}
+[0.491110] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_02/images/_02_-_Default1noCulling.JPG\n'}
+[0.491284] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_02/images/_03_-_Default1noCulling.JPG\n'}
+[0.491456] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_02/meshes/mesh.dae\n'}
+[0.491657] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_02/model.config\n'}
+[0.491842] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_02/model.sdf\n'}
+[0.492017] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_03/images/Material__1noCulling.JPG\n'}
+[0.492229] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_03/images/Material__2noCulling.JPG\n'}
+[0.492402] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_03/images/_03_-_Default1noCulling.JPG\n'}
+[0.492620] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_03/meshes/mesh.dae\n'}
+[0.494957] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_03/model.config\n'}
+[0.495460] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_female_03/model.sdf\n'}
+[0.495810] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_male_03/images/Material__1noCulling.JPG\n'}
+[0.496270] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_male_03/images/hair1noCulling.JPG\n'}
+[0.496647] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_male_03/images/hrad1noCulling.JPG\n'}
+[0.497085] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_male_03/meshes/mesh.dae\n'}
+[0.497525] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_male_03/model.config\n'}
+[0.497989] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/citizen_extras_male_03/model.sdf\n'}
+[0.498317] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/closet/closet.sdf\n'}
+[0.498749] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/closet/meshes/closet.stl\n'}
+[0.499176] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/closet/model.config\n'}
+[0.499529] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/cocacola/cocacola.sdf\n'}
+[0.499947] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/cocacola/material/scripts/cocacola.material\n'}
+[0.500371] (-) TimerEvent: {}
+[0.502058] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/cocacola/material/textures/cocacola.jpg\n'}
+[0.502616] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/cocacola/model.config\n'}
+[0.503064] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/coke_can_slim/coke_can_slim.sdf\n'}
+[0.503508] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/coke_can_slim/material/scripts/coke_can_slim.material\n'}
+[0.503974] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/coke_can_slim/material/textures/coke_can_slim.jpg\n'}
+[0.504316] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/coke_can_slim/model.config\n'}
+[0.504809] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/database.config\n'}
+[0.505251] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/dining_chair/dining_chair.sdf\n'}
+[0.505683] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/dining_chair/meshes/dining_chair.stl\n'}
+[0.506019] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/dining_chair/model.config\n'}
+[0.506449] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/dock1/dock1.sdf\n'}
+[0.506841] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/dock1/meshes/dock1.dae\n'}
+[0.507185] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/dock1/model.config\n'}
+[0.507621] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/door_obstacle/door_obstacle.sdf\n'}
+[0.508049] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/door_obstacle/model.config\n'}
+[0.508378] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/floor_lamp/floor_lamp.sdf\n'}
+[0.508890] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/floor_lamp/meshes/floor_lamp.stl\n'}
+[0.509485] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/floor_lamp/model.config\n'}
+[0.509930] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/goetz_sofa/goetz_sofa.sdf\n'}
+[0.510465] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/goetz_sofa/materials/textures/texture0.jpg\n'}
+[0.510899] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[0.511299] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.511740] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.512114] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[0.512502] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[0.512940] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/goetz_sofa/meshes/goetz_sofa.dae\n'}
+[0.513344] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/goetz_sofa/model.config\n'}
+[0.513777] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.xml\n'}
+[0.514110] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/green_ball/materials/scripts/ball.material\n'}
+[0.515085] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/green_ball/model.config\n'}
+[0.518938] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/green_ball/model.sdf\n'}
+[0.519719] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/green_cube/green_cube.sdf\n'}
+[0.520579] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/green_cube/model.config\n'}
+[0.522733] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/green_rectangle/green_rectangle.sdf\n'}
+[0.526687] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/green_rectangle/model.config\n'}
+[0.527834] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ground_plane/model-1_2.sdf\n'}
+[0.528674] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ground_plane/model-1_3.sdf\n'}
+[0.532100] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ground_plane/model-1_4.sdf\n'}
+[0.535035] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ground_plane/model.config\n'}
+[0.535886] (serial) CommandEnded: {'returncode': 0}
+[0.537394] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ground_plane/model.sdf\n'}
+[0.538160] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_flat_map/hospital_flat_map.sdf\n'}
+[0.538692] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_flat_map/meshes/hospital_flat_map.stl\n'}
+[0.539656] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_flat_map/model.config\n'}
+[0.540362] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/hospital_map.sdf\n'}
+[0.541277] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/g1.stl\n'}
+[0.542411] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/g2.stl\n'}
+[0.542884] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/g3.stl\n'}
+[0.546620] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/g4.stl\n'}
+[0.548689] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/g5.stl\n'}
+[0.550240] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/g6.stl\n'}
+[0.551727] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/g7.stl\n'}
+[0.555172] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/gr1.stl\n'}
+[0.555811] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/gr2.stl\n'}
+[0.556442] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/gr3.stl\n'}
+[0.556926] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/gr4.stl\n'}
+[0.557332] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/gr5.stl\n'}
+[0.559093] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/gr6.stl\n'}
+[0.559675] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/hospital_map.stl\n'}
+[0.560165] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/w1.stl\n'}
+[0.561292] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/w2.stl\n'}
+[0.562565] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/w3.stl\n'}
+[0.563445] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/w4.stl\n'}
+[0.564578] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/w5.stl\n'}
+[0.566097] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/w6.stl\n'}
+[0.567397] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/w7.stl\n'}
+[0.574246] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/wr1.stl\n'}
+[0.576406] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/wr2.stl\n'}
+[0.578229] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/wr3.stl\n'}
+[0.579220] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/wr4.stl\n'}
+[0.579699] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/wr5.stl\n'}
+[0.580971] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/meshes/wr6.stl\n'}
+[0.581498] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/hospital_map/model.config\n'}
+[0.582483] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ideal_sun/model.config\n'}
+[0.584335] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ideal_sun/model.sdf\n'}
+[0.584920] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_ektorp_chair/meshes/IKE06001.JPG\n'}
+[0.585230] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_ektorp_chair/meshes/mesh.dae\n'}
+[0.585530] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_ektorp_chair/model.config\n'}
+[0.585827] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_ektorp_chair/model.sdf\n'}
+[0.586121] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_folke_chair/meshes/mesh.dae\n'}
+[0.586410] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_folke_chair/meshes/notexture.png\n'}
+[0.586698] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_folke_chair/meshes/texture.png\n'}
+[0.587019] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_folke_chair/model.config\n'}
+[0.587321] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_folke_chair/model.sdf\n'}
+[0.587611] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_harry_chair/meshes/body.png\n'}
+[0.587903] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_harry_chair/meshes/legs.png\n'}
+[0.588187] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_harry_chair/meshes/mesh.dae\n'}
+[0.588469] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_harry_chair/model.config\n'}
+[0.588960] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_harry_chair/model.sdf\n'}
+[0.590386] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_stefan_chair/meshes/mesh.dae\n'}
+[0.591387] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_stefan_chair/model.config\n'}
+[0.592027] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_stefan_chair/model.sdf\n'}
+[0.595495] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_urban_chair/meshes/mesh.dae\n'}
+[0.601270] (-) TimerEvent: {}
+[0.601607] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_urban_chair/meshes/notexture.png\n'}
+[0.603277] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_urban_chair/model.config\n'}
+[0.603646] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/ikea_urban_chair/model.sdf\n'}
+[0.604238] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/kitchen_chair/kitchen_chair.sdf\n'}
+[0.604749] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/kitchen_chair/meshes/kitchen_chair.stl\n'}
+[0.606239] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/kitchen_chair/model.config\n'}
+[0.606750] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/kitchen_table/kitchen_table.sdf\n'}
+[0.607526] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/kitchen_table/meshes/kitchen_table.stl\n'}
+[0.609270] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/kitchen_table/model.config\n'}
+[0.609940] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/lamp/lamp.sdf\n'}
+[0.611560] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/lamp/meshes/lamp.stl\n'}
+[0.612206] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/lamp/model.config\n'}
+[0.613596] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/macrolink_small_table/model.config\n'}
+[0.614221] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/macrolink_small_table/table.sdf\n'}
+[0.614774] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/macrolink_table/model.config\n'}
+[0.615527] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/macrolink_table/table.sdf\n'}
+[0.617309] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/marker26_8cm/marker26_8cm.sdf\n'}
+[0.618037] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/marker26_8cm/material/scripts/marker26_8cm.material\n'}
+[0.624749] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/marker26_8cm/material/textures/aruco-26_8cm.png\n'}
+[0.630808] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/marker26_8cm/model.config\n'}
+[0.631227] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pal_poster/material/scripts/pal_poster.material\n'}
+[0.631760] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pal_poster/material/textures/pal_poster.jpg\n'}
+[0.632261] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pal_poster/model.config\n'}
+[0.632716] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pal_poster/pal_poster.sdf\n'}
+[0.633608] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pal_textured_object/material/scripts/pal_textured_object.material\n'}
+[0.633935] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pal_textured_object/material/textures/pal_textured_object.png\n'}
+[0.634234] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pal_textured_object/model.config\n'}
+[0.634526] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pal_textured_object/pal_textured_object.sdf\n'}
+[0.634817] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pringles/material/scripts/pringles.material\n'}
+[0.635105] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pringles/material/textures/pringles.jpg\n'}
+[0.635392] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pringles/model.config\n'}
+[0.635877] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pringles/pringles.sdf\n'}
+[0.636181] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pringles2/material/scripts/pringles2.material\n'}
+[0.636474] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pringles2/material/textures/pringles2.jpg\n'}
+[0.636768] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pringles2/model.config\n'}
+[0.637024] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/pringles2/pringles2.sdf\n'}
+[0.637306] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_bookshelf/bookshelf.sdf\n'}
+[0.637590] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_bookshelf/model.config\n'}
+[0.637874] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_cabinet/cabinet.sdf\n'}
+[0.638160] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_cabinet/model.config\n'}
+[0.638687] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_table/model.config\n'}
+[0.639423] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_table/table.sdf\n'}
+[0.639818] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_textured_object/meshes/mesh.dae\n'}
+[0.640462] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_textured_object/meshes/texture.jpg\n'}
+[0.641075] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_textured_object/model.config\n'}
+[0.641426] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_textured_object/model.sdf\n'}
+[0.641752] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_textured_object_nograv/model.config\n'}
+[0.641949] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_textured_object_nograv/model.sdf\n'}
+[0.642207] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_walls/model.config\n'}
+[0.642436] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reemc_walls/walls.sdf\n'}
+[0.642620] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reviews_table/meshes/reviews_table.stl\n'}
+[0.642841] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reviews_table/model.config\n'}
+[0.643036] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/reviews_table/reviews_table.sdf\n'}
+[0.643215] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/robocup_walls_70cm_doors/house_walls.sdf\n'}
+[0.643428] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/robocup_walls_70cm_doors/meshes/robocup_house.stl\n'}
+[0.643604] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/robocup_walls_70cm_doors/model.config\n'}
+[0.643828] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/rockin_camp/README\n'}
+[0.644068] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/rockin_camp/model.config\n'}
+[0.644272] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/rockin_camp/model.sdf\n'}
+[0.644458] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/rockin_camp/rockin_camp.png\n'}
+[0.644965] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sideboard/meshes/sideboard.stl\n'}
+[0.645281] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sideboard/model.config\n'}
+[0.645591] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sideboard/sideboard.sdf\n'}
+[0.645902] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/slippery_patch/material/scripts/slippery_patch.material\n'}
+[0.646195] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/slippery_patch/material/textures/slippery_patch.jpg\n'}
+[0.646380] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/slippery_patch/model.config\n'}
+[0.646556] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/slippery_patch/slippery_patch.sdf\n'}
+[0.646759] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/small_cylinder/model.config\n'}
+[0.647379] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/small_cylinder/small_cylinder.sdf\n'}
+[0.647739] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sofa/meshes/sofa.stl\n'}
+[0.648002] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sofa/model.config\n'}
+[0.648197] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sofa/sofa.sdf\n'}
+[0.648422] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sprite/material/scripts/sprite.material\n'}
+[0.648700] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sprite/material/textures/sprite.jpg\n'}
+[0.649427] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sprite/model.config\n'}
+[0.649715] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sprite/sprite.sdf\n'}
+[0.649947] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sun/model-1_2.sdf\n'}
+[0.650175] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sun/model-1_3.sdf\n'}
+[0.650390] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sun/model-1_4.sdf\n'}
+[0.650593] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sun/model.config\n'}
+[0.650767] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/sun/model.sdf\n'}
+[0.650972] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/table_0m8/model.config\n'}
+[0.651154] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/table_0m8/table.sdf\n'}
+[0.651325] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/table_1m/model.config\n'}
+[0.651521] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/table_1m/table_1m.sdf\n'}
+[0.651716] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/test2/meshes/test2.dae\n'}
+[0.651905] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/test2/model.config\n'}
+[0.652154] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/test2/test2.sdf\n'}
+[0.652353] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/testing_room/README\n'}
+[0.652525] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/testing_room/model.config\n'}
+[0.652760] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/testing_room/model.sdf\n'}
+[0.652955] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/testing_room/testing_room.png\n'}
+[0.653183] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/tv/meshes/tv.stl\n'}
+[0.654165] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/tv/model.config\n'}
+[0.661576] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/tv/tv.sdf\n'}
+[0.662015] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/wall_with_reem_photo/material/scripts/ball.material\n'}
+[0.663038] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/wall_with_reem_photo/material/scripts/wallWithREEMphoto.material\n'}
+[0.663409] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/wall_with_reem_photo/material/textures/REEM_photo0.jpg\n'}
+[0.663792] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/wall_with_reem_photo/model.config\n'}
+[0.664497] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/wall_with_reem_photo/model.sdf\n'}
+[0.665104] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/wardrobe/meshes/wardrobe.stl\n'}
+[0.665500] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/wardrobe/model.config\n'}
+[0.665900] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/wardrobe/wardrobe.sdf\n'}
+[0.666692] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/materials/textures/Carpet_Berber_Pattern_Gray_.png\n'}
+[0.667477] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/materials/textures/Stone_Brushed_Khaki_.png\n'}
+[0.667724] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/materials/textures/Wood_Bamboo_Medium_.png\n'}
+[0.667908] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/materials/textures/Wood_Cherry_Original_.png\n'}
+[0.668107] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/materials/textures/__Wood_Bamboo_Medium_1.png\n'}
+[0.668297] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/materials/textures/__auto_12.png\n'}
+[0.668472] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/materials/textures/__auto_2.png\n'}
+[0.668729] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/meshes/willowgarage_collision.dae\n'}
+[0.668909] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/models/willowgarage/meshes/willowgarage_visual.dae\n'}
+[0.669157] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/ament_index/resource_index/package_run_dependencies/scootbot\n'}
+[0.669370] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/ament_index/resource_index/parent_prefix_path/scootbot\n'}
+[0.669546] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/environment/ament_prefix_path.sh\n'}
+[0.669759] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/environment/ament_prefix_path.dsv\n'}
+[0.669952] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/environment/path.sh\n'}
+[0.670123] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/environment/path.dsv\n'}
+[0.670325] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/local_setup.bash\n'}
+[0.670512] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/local_setup.sh\n'}
+[0.670681] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/local_setup.zsh\n'}
+[0.670932] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/local_setup.dsv\n'}
+[0.671139] (scootbot) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.dsv\n'}
+[0.671316] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/ament_index/resource_index/packages/scootbot\n'}
+[0.671504] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/cmake/scootbotConfig.cmake\n'}
+[0.671709] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/cmake/scootbotConfig-version.cmake\n'}
+[0.671880] (scootbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.xml\n'}
+[0.672091] (scootbot) CommandEnded: {'returncode': 0}
+[0.701433] (-) TimerEvent: {}
+[0.747874] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[0.755823] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[0.801875] (-) TimerEvent: {}
+[0.815540] (scootbot) JobEnded: {'identifier': 'scootbot', 'rc': 0}
+[0.818648] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[0.820665] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[0.821557] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '10.0.0.3 47792 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib:/home/ubuntu/scootbot/3.0.0/install/serial/lib:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/diffdrive_arduino_backup/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino'), ('SSH_CONNECTION', '10.0.0.3 47792 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros')]), 'shell': False}
+[0.902040] (-) TimerEvent: {}
+[0.921212] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target fake_robot\x1b[0m\n'}
+[0.925409] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target diffdrive_arduino\x1b[0m\n'}
+[0.975650] (diffdrive_arduino) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o\x1b[0m\n'}
+[0.983041] (diffdrive_arduino) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o\x1b[0m\n'}
+[1.002195] (-) TimerEvent: {}
+[1.102728] (-) TimerEvent: {}
+[1.203523] (-) TimerEvent: {}
+[1.304039] (-) TimerEvent: {}
+[1.404609] (-) TimerEvent: {}
+[1.505437] (-) TimerEvent: {}
+[1.606270] (-) TimerEvent: {}
+[1.707238] (-) TimerEvent: {}
+[1.808841] (-) TimerEvent: {}
+[1.909651] (-) TimerEvent: {}
+[2.010514] (-) TimerEvent: {}
+[2.111352] (-) TimerEvent: {}
+[2.212200] (-) TimerEvent: {}
+[2.314372] (-) TimerEvent: {}
+[2.414926] (-) TimerEvent: {}
+[2.515518] (-) TimerEvent: {}
+[2.616122] (-) TimerEvent: {}
+[2.716709] (-) TimerEvent: {}
+[2.817516] (-) TimerEvent: {}
+[2.918170] (-) TimerEvent: {}
+[3.018720] (-) TimerEvent: {}
+[3.119297] (-) TimerEvent: {}
+[3.219878] (-) TimerEvent: {}
+[3.320471] (-) TimerEvent: {}
+[3.421030] (-) TimerEvent: {}
+[3.521630] (-) TimerEvent: {}
+[3.622211] (-) TimerEvent: {}
+[3.722770] (-) TimerEvent: {}
+[3.823340] (-) TimerEvent: {}
+[3.923916] (-) TimerEvent: {}
+[4.024496] (-) TimerEvent: {}
+[4.125099] (-) TimerEvent: {}
+[4.225661] (-) TimerEvent: {}
+[4.326230] (-) TimerEvent: {}
+[4.426800] (-) TimerEvent: {}
+[4.527344] (-) TimerEvent: {}
+[4.627905] (-) TimerEvent: {}
+[4.728441] (-) TimerEvent: {}
+[4.828993] (-) TimerEvent: {}
+[4.929556] (-) TimerEvent: {}
+[5.030139] (-) TimerEvent: {}
+[5.130797] (-) TimerEvent: {}
+[5.231371] (-) TimerEvent: {}
+[5.331940] (-) TimerEvent: {}
+[5.432510] (-) TimerEvent: {}
+[5.533117] (-) TimerEvent: {}
+[5.633989] (-) TimerEvent: {}
+[5.734570] (-) TimerEvent: {}
+[5.835144] (-) TimerEvent: {}
+[5.935685] (-) TimerEvent: {}
+[6.036300] (-) TimerEvent: {}
+[6.138629] (-) TimerEvent: {}
+[6.239205] (-) TimerEvent: {}
+[6.339750] (-) TimerEvent: {}
+[6.440321] (-) TimerEvent: {}
+[6.541042] (-) TimerEvent: {}
+[6.641549] (-) TimerEvent: {}
+[6.743797] (-) TimerEvent: {}
+[6.844278] (-) TimerEvent: {}
+[6.944830] (-) TimerEvent: {}
+[7.045457] (-) TimerEvent: {}
+[7.146375] (-) TimerEvent: {}
+[7.248269] (-) TimerEvent: {}
+[7.350664] (-) TimerEvent: {}
+[7.451514] (-) TimerEvent: {}
+[7.552358] (-) TimerEvent: {}
+[7.653460] (-) TimerEvent: {}
+[7.664491] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1\x1b[m\x1b[K:\n'}
+[7.665062] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:25:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type FakeRobot::configure(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[7.665411] (diffdrive_arduino) StderrLine: {'line': b'   25 |   return_type \x1b[01;31m\x1b[Kconfigure\x1b[m\x1b[K(const hardware_interface::HardwareInfo & info) override;\n'}
+[7.665737] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.666052] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:31:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type FakeRobot::start()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[7.666377] (diffdrive_arduino) StderrLine: {'line': b'   31 |   return_type \x1b[01;31m\x1b[Kstart\x1b[m\x1b[K() override;\n'}
+[7.666689] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.666984] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:33:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type FakeRobot::stop()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[7.667301] (diffdrive_arduino) StderrLine: {'line': b'   33 |   return_type \x1b[01;31m\x1b[Kstop\x1b[m\x1b[K() override;\n'}
+[7.667616] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.667918] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:35:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type FakeRobot::read()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[7.668236] (diffdrive_arduino) StderrLine: {'line': b'   35 |   return_type \x1b[01;31m\x1b[Kread\x1b[m\x1b[K() override;\n'}
+[7.668608] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.668927] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:37:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type FakeRobot::write()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[7.669295] (diffdrive_arduino) StderrLine: {'line': b'   37 |   return_type \x1b[01;31m\x1b[Kwrite\x1b[m\x1b[K() override;\n'}
+[7.669576] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.691977] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type FakeRobot::configure(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.692523] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:15:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconfigure_default\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.694417] (diffdrive_arduino) StderrLine: {'line': b'   15 |   if (\x1b[01;31m\x1b[Kconfigure_default\x1b[m\x1b[K(info) != return_type::OK) {\n'}
+[7.694926] (diffdrive_arduino) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.708235] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:36:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatus_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.708787] (diffdrive_arduino) StderrLine: {'line': b'   36 |   \x1b[01;31m\x1b[Kstatus_\x1b[m\x1b[K = hardware_interface::status::CONFIGURED;\n'}
+[7.709139] (diffdrive_arduino) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.709514] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:36:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::status\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[7.709822] (diffdrive_arduino) StderrLine: {'line': b'   36 |   status_ = hardware_interface::\x1b[01;31m\x1b[Kstatus\x1b[m\x1b[K::CONFIGURED;\n'}
+[7.710256] (diffdrive_arduino) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.740049] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type FakeRobot::start()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.740705] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:70:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatus_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.742887] (diffdrive_arduino) StderrLine: {'line': b'   70 |   \x1b[01;31m\x1b[Kstatus_\x1b[m\x1b[K = hardware_interface::status::STARTED;\n'}
+[7.743233] (diffdrive_arduino) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.743525] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:70:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::status\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[7.743898] (diffdrive_arduino) StderrLine: {'line': b'   70 |   status_ = hardware_interface::\x1b[01;31m\x1b[Kstatus\x1b[m\x1b[K::STARTED;\n'}
+[7.744198] (diffdrive_arduino) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.753591] (-) TimerEvent: {}
+[7.758066] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type FakeRobot::stop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.758656] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:78:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatus_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.759050] (diffdrive_arduino) StderrLine: {'line': b'   78 |   \x1b[01;31m\x1b[Kstatus_\x1b[m\x1b[K = hardware_interface::status::STOPPED;\n'}
+[7.761582] (diffdrive_arduino) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.762054] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:78:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::status\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[7.762551] (diffdrive_arduino) StderrLine: {'line': b'   78 |   status_ = hardware_interface::\x1b[01;31m\x1b[Kstatus\x1b[m\x1b[K::STOPPED;\n'}
+[7.762958] (diffdrive_arduino) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.854261] (-) TimerEvent: {}
+[7.955461] (-) TimerEvent: {}
+[8.056022] (-) TimerEvent: {}
+[8.156684] (-) TimerEvent: {}
+[8.257345] (-) TimerEvent: {}
+[8.358197] (-) TimerEvent: {}
+[8.459053] (-) TimerEvent: {}
+[8.561169] (-) TimerEvent: {}
+[8.662195] (-) TimerEvent: {}
+[8.763202] (-) TimerEvent: {}
+[8.864107] (-) TimerEvent: {}
+[8.964976] (-) TimerEvent: {}
+[9.066284] (-) TimerEvent: {}
+[9.167106] (-) TimerEvent: {}
+[9.238096] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57\x1b[m\x1b[K,\n'}
+[9.238572] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55\x1b[m\x1b[K,\n'}
+[9.238903] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[9.239222] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:118\x1b[m\x1b[K:\n'}
+[9.239542] (diffdrive_arduino) StderrLine: {'line': b'/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = FakeRobot; B = hardware_interface::SystemInterface]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.239860] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:\x1b[m\x1b[K   required from here\n'}
+[9.240170] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[KFakeRobot\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.240479] (diffdrive_arduino) StderrLine: {'line': b'  218 |     return \x1b[01;31m\x1b[Knew C\x1b[m\x1b[K;\n'}
+[9.240863] (diffdrive_arduino) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.242565] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1\x1b[m\x1b[K:\n'}
+[9.243002] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:18:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[KFakeRobot\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.243391] (diffdrive_arduino) StderrLine: {'line': b'   18 | class \x1b[01;36m\x1b[KFakeRobot\x1b[m\x1b[K : public hardware_interface::SystemInterface\n'}
+[9.243769] (diffdrive_arduino) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[9.244089] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h:9\x1b[m\x1b[K,\n'}
+[9.244467] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/fake_robot.cpp:1\x1b[m\x1b[K:\n'}
+[9.244870] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:173:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.245206] (diffdrive_arduino) StderrLine: {'line': b'  173 |   virtual return_type \x1b[01;36m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[9.245611] (diffdrive_arduino) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.245996] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:184:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.246325] (diffdrive_arduino) StderrLine: {'line': b'  184 |   virtual return_type \x1b[01;36m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[9.246682] (diffdrive_arduino) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.267253] (-) TimerEvent: {}
+[9.368524] (-) TimerEvent: {}
+[9.446441] (diffdrive_arduino) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/fake_robot.dir/build.make:76: CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o] Error 1\n'}
+[9.446898] (diffdrive_arduino) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/fake_robot.dir/all] Error 2\n'}
+[9.447177] (diffdrive_arduino) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[9.468701] (-) TimerEvent: {}
+[9.569226] (-) TimerEvent: {}
+[9.669716] (-) TimerEvent: {}
+[9.770237] (-) TimerEvent: {}
+[9.870981] (-) TimerEvent: {}
+[9.971742] (-) TimerEvent: {}
+[10.072309] (-) TimerEvent: {}
+[10.152074] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1\x1b[m\x1b[K:\n'}
+[10.152779] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:28:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type DiffDriveArduino::configure(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[10.153130] (diffdrive_arduino) StderrLine: {'line': b'   28 |   return_type \x1b[01;31m\x1b[Kconfigure\x1b[m\x1b[K(const hardware_interface::HardwareInfo & info) override;\n'}
+[10.153426] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.153712] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:34:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type DiffDriveArduino::start()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[10.154022] (diffdrive_arduino) StderrLine: {'line': b'   34 |   return_type \x1b[01;31m\x1b[Kstart\x1b[m\x1b[K() override;\n'}
+[10.154305] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.154587] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:36:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type DiffDriveArduino::stop()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[10.154877] (diffdrive_arduino) StderrLine: {'line': b'   36 |   return_type \x1b[01;31m\x1b[Kstop\x1b[m\x1b[K() override;\n'}
+[10.155157] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[10.155443] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:38:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type DiffDriveArduino::read()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[10.155756] (diffdrive_arduino) StderrLine: {'line': b'   38 |   return_type \x1b[01;31m\x1b[Kread\x1b[m\x1b[K() override;\n'}
+[10.156035] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[10.156371] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:40:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type DiffDriveArduino::write()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[10.156680] (diffdrive_arduino) StderrLine: {'line': b'   40 |   return_type \x1b[01;31m\x1b[Kwrite\x1b[m\x1b[K() override;\n'}
+[10.156964] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.172443] (-) TimerEvent: {}
+[10.177849] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type DiffDriveArduino::configure(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.178306] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:21:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconfigure_default\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.178620] (diffdrive_arduino) StderrLine: {'line': b'   21 |   if (\x1b[01;31m\x1b[Kconfigure_default\x1b[m\x1b[K(info) != return_type::OK) {\n'}
+[10.178910] (diffdrive_arduino) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.192746] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:46:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatus_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.194252] (diffdrive_arduino) StderrLine: {'line': b'   46 |   \x1b[01;31m\x1b[Kstatus_\x1b[m\x1b[K = hardware_interface::status::CONFIGURED;\n'}
+[10.194630] (diffdrive_arduino) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.194925] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:46:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::status\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[10.195291] (diffdrive_arduino) StderrLine: {'line': b'   46 |   status_ = hardware_interface::\x1b[01;31m\x1b[Kstatus\x1b[m\x1b[K::CONFIGURED;\n'}
+[10.195824] (diffdrive_arduino) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.221897] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type DiffDriveArduino::start()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.222395] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:85:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatus_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.222798] (diffdrive_arduino) StderrLine: {'line': b'   85 |   \x1b[01;31m\x1b[Kstatus_\x1b[m\x1b[K = hardware_interface::status::STARTED;\n'}
+[10.223101] (diffdrive_arduino) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.223463] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:85:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::status\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[10.223883] (diffdrive_arduino) StderrLine: {'line': b'   85 |   status_ = hardware_interface::\x1b[01;31m\x1b[Kstatus\x1b[m\x1b[K::STARTED;\n'}
+[10.224170] (diffdrive_arduino) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.234440] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type DiffDriveArduino::stop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.234957] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:93:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatus_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.235350] (diffdrive_arduino) StderrLine: {'line': b'   93 |   \x1b[01;31m\x1b[Kstatus_\x1b[m\x1b[K = hardware_interface::status::STOPPED;\n'}
+[10.235679] (diffdrive_arduino) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.236027] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:93:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::status\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[10.236444] (diffdrive_arduino) StderrLine: {'line': b'   93 |   status_ = hardware_interface::\x1b[01;31m\x1b[Kstatus\x1b[m\x1b[K::STOPPED;\n'}
+[10.236790] (diffdrive_arduino) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.272595] (-) TimerEvent: {}
+[10.373284] (-) TimerEvent: {}
+[10.473916] (-) TimerEvent: {}
+[10.574440] (-) TimerEvent: {}
+[10.675027] (-) TimerEvent: {}
+[10.775655] (-) TimerEvent: {}
+[10.877128] (-) TimerEvent: {}
+[10.977849] (-) TimerEvent: {}
+[11.078428] (-) TimerEvent: {}
+[11.178957] (-) TimerEvent: {}
+[11.279467] (-) TimerEvent: {}
+[11.380010] (-) TimerEvent: {}
+[11.480578] (-) TimerEvent: {}
+[11.539709] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57\x1b[m\x1b[K,\n'}
+[11.540218] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55\x1b[m\x1b[K,\n'}
+[11.540653] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[11.541012] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:153\x1b[m\x1b[K:\n'}
+[11.541337] (diffdrive_arduino) StderrLine: {'line': b'/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = DiffDriveArduino; B = hardware_interface::SystemInterface]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.541706] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:\x1b[m\x1b[K   required from here\n'}
+[11.542029] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[KDiffDriveArduino\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.542350] (diffdrive_arduino) StderrLine: {'line': b'  218 |     return \x1b[01;31m\x1b[Knew C\x1b[m\x1b[K;\n'}
+[11.542667] (diffdrive_arduino) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.542974] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1\x1b[m\x1b[K:\n'}
+[11.543317] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:21:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[KDiffDriveArduino\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.543629] (diffdrive_arduino) StderrLine: {'line': b'   21 | class \x1b[01;36m\x1b[KDiffDriveArduino\x1b[m\x1b[K : public hardware_interface::SystemInterface\n'}
+[11.543941] (diffdrive_arduino) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.544254] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h:9\x1b[m\x1b[K,\n'}
+[11.544965] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1\x1b[m\x1b[K:\n'}
+[11.545316] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:173:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.545694] (diffdrive_arduino) StderrLine: {'line': b'  173 |   virtual return_type \x1b[01;36m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[11.546009] (diffdrive_arduino) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.546320] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:184:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.546635] (diffdrive_arduino) StderrLine: {'line': b'  184 |   virtual return_type \x1b[01;36m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[11.546937] (diffdrive_arduino) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.580707] (-) TimerEvent: {}
+[11.681271] (-) TimerEvent: {}
+[11.724733] (diffdrive_arduino) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o] Error 1\n'}
+[11.725296] (diffdrive_arduino) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2\n'}
+[11.728618] (diffdrive_arduino) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.729930] (diffdrive_arduino) CommandEnded: {'returncode': 2}
+[11.781400] (-) TimerEvent: {}
+[11.841511] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 2}
+[11.852598] (-) EventReactorShutdown: {}
