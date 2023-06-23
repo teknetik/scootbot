@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source install/setup.sh
+rm -rf ~/.ros/log/*
 # SIM
 #ros2 launch scootbot scootbot_sim.launch.py use_ros2_control:=true use_sim_time:=true & 
 # REAL
@@ -16,6 +17,7 @@ echo "publishing casterwhl_r_link"
 ros2 run tf2_ros static_transform_publisher -0.25 -0.165 -0.08 0 0 0 1 base_link casterwhl_r_link &
 
 
+
 # Create Map
 ros2 launch scootbot online_async_launch.py use_sim_time:=false > log/slam.log 2>&1 &
 # With Map
@@ -26,3 +28,6 @@ ros2 launch scootbot localization_launch.py use_sim_time:=false > log/localizati
 sleep 5
 
 ros2 launch scootbot humble_navigation_launch.py use_sim_time:=false > log/nav2.log 2>&1 &
+sleep 5
+ros2 launch rplidar_ros rplidar.launch.py use_sim_time:=false > log/lidar.log 2>&1 &
+#ros2 launch phidgets_spatial spatial-launch.py &

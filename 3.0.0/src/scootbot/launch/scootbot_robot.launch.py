@@ -108,7 +108,7 @@ def generate_launch_description():
         launch.actions.DeclareLaunchArgument(name='gui', default_value='True',
                                             description='Flag to enable joint_state_publisher_gui'),
         launch.actions.DeclareLaunchArgument('joy_config', default_value='ps3'),
-        launch.actions.DeclareLaunchArgument('joy_dev', default_value='/dev/input/js1'),
+        launch.actions.DeclareLaunchArgument('joy_dev', default_value='/dev/input/js0'),
         launch.actions.DeclareLaunchArgument('config_filepath', default_value=[
             launch.substitutions.TextSubstitution(text=os.path.join(
                 get_package_share_directory('scootbot'), 'config', '')),

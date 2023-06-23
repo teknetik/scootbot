@@ -1,16 +1,17 @@
 CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o: \
  /home/ubuntu/scootbot/3.0.0/src/serial/src/impl/list_ports/list_ports_linux.cc \
- /usr/include/stdc-predef.h /usr/include/c++/11/vector \
+ /usr/x86_64-linux-gnu/include/stdc-predef.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/timesize.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/x86_64-linux-gnu/include/features.h \
+ /usr/x86_64-linux-gnu/include/features-time64.h \
+ /usr/x86_64-linux-gnu/include/bits/wordsize.h \
+ /usr/x86_64-linux-gnu/include/bits/timesize.h \
+ /usr/x86_64-linux-gnu/include/sys/cdefs.h \
+ /usr/x86_64-linux-gnu/include/bits/long-double.h \
+ /usr/x86_64-linux-gnu/include/gnu/stubs.h \
+ /usr/x86_64-linux-gnu/include/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
  /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/functexcept.h \
@@ -46,34 +47,35 @@ CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o: \
  /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
- /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/x86_64-linux-gnu/include/wchar.h \
+ /usr/x86_64-linux-gnu/include/bits/libc-header-start.h \
+ /usr/x86_64-linux-gnu/include/bits/floatn.h \
+ /usr/x86_64-linux-gnu/include/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/x86_64-linux-gnu/include/bits/wchar.h \
+ /usr/x86_64-linux-gnu/include/bits/types/wint_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/mbstate_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__mbstate_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__FILE.h \
+ /usr/x86_64-linux-gnu/include/bits/types/FILE.h \
+ /usr/x86_64-linux-gnu/include/bits/types/locale_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__locale_t.h \
  /usr/include/c++/11/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+ /usr/x86_64-linux-gnu/include/stdint.h \
+ /usr/x86_64-linux-gnu/include/bits/types.h \
+ /usr/x86_64-linux-gnu/include/bits/typesizes.h \
+ /usr/x86_64-linux-gnu/include/bits/time64.h \
+ /usr/x86_64-linux-gnu/include/bits/stdint-intn.h \
+ /usr/x86_64-linux-gnu/include/bits/stdint-uintn.h \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
- /usr/include/c++/11/clocale /usr/include/locale.h \
- /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/iosfwd \
- /usr/include/c++/11/cctype /usr/include/ctype.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /usr/include/c++/11/clocale /usr/x86_64-linux-gnu/include/locale.h \
+ /usr/x86_64-linux-gnu/include/bits/locale.h /usr/include/c++/11/iosfwd \
+ /usr/include/c++/11/cctype /usr/x86_64-linux-gnu/include/ctype.h \
+ /usr/x86_64-linux-gnu/include/bits/endian.h \
+ /usr/x86_64-linux-gnu/include/bits/endianness.h \
  /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
  /usr/include/c++/11/bits/stl_function.h \
@@ -82,54 +84,62 @@ CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o: \
  /usr/include/c++/11/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/x86_64-linux-gnu/include/pthread.h \
+ /usr/x86_64-linux-gnu/include/sched.h \
+ /usr/x86_64-linux-gnu/include/bits/types/time_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_timespec.h \
+ /usr/x86_64-linux-gnu/include/bits/sched.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_sched_param.h \
+ /usr/x86_64-linux-gnu/include/bits/cpu-set.h \
+ /usr/x86_64-linux-gnu/include/time.h \
+ /usr/x86_64-linux-gnu/include/bits/time.h \
+ /usr/x86_64-linux-gnu/include/bits/timex.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_timeval.h \
+ /usr/x86_64-linux-gnu/include/bits/types/clock_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_tm.h \
+ /usr/x86_64-linux-gnu/include/bits/types/clockid_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/timer_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_itimerspec.h \
+ /usr/x86_64-linux-gnu/include/bits/pthreadtypes.h \
+ /usr/x86_64-linux-gnu/include/bits/thread-shared-types.h \
+ /usr/x86_64-linux-gnu/include/bits/pthreadtypes-arch.h \
+ /usr/x86_64-linux-gnu/include/bits/atomic_wide_counter.h \
+ /usr/x86_64-linux-gnu/include/bits/struct_mutex.h \
+ /usr/x86_64-linux-gnu/include/bits/struct_rwlock.h \
+ /usr/x86_64-linux-gnu/include/bits/setjmp.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__sigset_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct___jmp_buf_tag.h \
+ /usr/x86_64-linux-gnu/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
- /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+ /usr/x86_64-linux-gnu/include/sys/single_threaded.h \
  /usr/include/c++/11/string_view /usr/include/c++/11/bits/string_view.tcc \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
- /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/x86_64-linux-gnu/include/stdlib.h \
+ /usr/x86_64-linux-gnu/include/bits/waitflags.h \
+ /usr/x86_64-linux-gnu/include/bits/waitstatus.h \
+ /usr/x86_64-linux-gnu/include/sys/types.h \
+ /usr/x86_64-linux-gnu/include/endian.h \
+ /usr/x86_64-linux-gnu/include/bits/byteswap.h \
+ /usr/x86_64-linux-gnu/include/bits/uintn-identity.h \
+ /usr/x86_64-linux-gnu/include/sys/select.h \
+ /usr/x86_64-linux-gnu/include/bits/select.h \
+ /usr/x86_64-linux-gnu/include/bits/types/sigset_t.h \
+ /usr/x86_64-linux-gnu/include/alloca.h \
+ /usr/x86_64-linux-gnu/include/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cstdio \
- /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/c++/11/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/x86_64-linux-gnu/include/stdio.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__fpos_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__fpos64_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_FILE.h \
+ /usr/x86_64-linux-gnu/include/bits/types/cookie_io_functions_t.h \
+ /usr/x86_64-linux-gnu/include/bits/stdio_lim.h \
+ /usr/include/c++/11/cerrno /usr/x86_64-linux-gnu/include/errno.h \
+ /usr/x86_64-linux-gnu/include/bits/errno.h \
+ /usr/x86_64-linux-gnu/include/linux/errno.h \
+ /usr/x86_64-linux-gnu/include/asm/errno.h \
+ /usr/x86_64-linux-gnu/include/asm-generic/errno.h \
+ /usr/x86_64-linux-gnu/include/asm-generic/errno-base.h \
+ /usr/x86_64-linux-gnu/include/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
@@ -145,7 +155,8 @@ CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o: \
  /usr/include/c++/11/bits/streambuf.tcc \
  /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/x86_64-linux-gnu/include/wctype.h \
+ /usr/x86_64-linux-gnu/include/bits/wctype-wchar.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
  /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
@@ -158,29 +169,36 @@ CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/cstdarg \
- /usr/include/glob.h /usr/include/x86_64-linux-gnu/sys/stat.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
- /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
+ /usr/x86_64-linux-gnu/include/glob.h \
+ /usr/x86_64-linux-gnu/include/sys/stat.h \
+ /usr/x86_64-linux-gnu/include/bits/stat.h \
+ /usr/x86_64-linux-gnu/include/bits/struct_stat.h \
+ /usr/x86_64-linux-gnu/include/bits/statx.h \
+ /usr/x86_64-linux-gnu/include/linux/stat.h \
+ /usr/x86_64-linux-gnu/include/linux/types.h \
+ /usr/x86_64-linux-gnu/include/asm/types.h \
+ /usr/x86_64-linux-gnu/include/asm-generic/types.h \
+ /usr/x86_64-linux-gnu/include/asm-generic/int-ll64.h \
+ /usr/x86_64-linux-gnu/include/asm/bitsperlong.h \
+ /usr/x86_64-linux-gnu/include/asm-generic/bitsperlong.h \
+ /usr/x86_64-linux-gnu/include/linux/posix_types.h \
+ /usr/x86_64-linux-gnu/include/linux/stddef.h \
+ /usr/x86_64-linux-gnu/include/asm/posix_types.h \
+ /usr/x86_64-linux-gnu/include/asm/posix_types_64.h \
+ /usr/x86_64-linux-gnu/include/asm-generic/posix_types.h \
+ /usr/x86_64-linux-gnu/include/bits/statx-generic.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_statx_timestamp.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_statx.h \
+ /usr/x86_64-linux-gnu/include/unistd.h \
+ /usr/x86_64-linux-gnu/include/bits/posix_opt.h \
+ /usr/x86_64-linux-gnu/include/bits/environments.h \
+ /usr/x86_64-linux-gnu/include/bits/confname.h \
+ /usr/x86_64-linux-gnu/include/bits/getopt_posix.h \
+ /usr/x86_64-linux-gnu/include/bits/getopt_core.h \
+ /usr/x86_64-linux-gnu/include/bits/unistd_ext.h \
+ /usr/x86_64-linux-gnu/include/linux/close_range.h \
  /home/ubuntu/scootbot/3.0.0/src/serial/include/serial/serial.h \
  /usr/include/c++/11/limits /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h \
+ /usr/x86_64-linux-gnu/include/string.h \
+ /usr/x86_64-linux-gnu/include/strings.h \
  /home/ubuntu/scootbot/3.0.0/src/serial/include/serial/v8stdint.h

@@ -24,3 +24,7 @@ killall -9 gzclient
 # killall -9 lifecycle_manager
 
 kill -9 $(ps aux | grep 'ros/humble' | grep -v fastdds | grep -v fast-discovery-server | awk '{print $2}')
+kill -9 $(ps aux | grep 'rplidar_ros' | awk '{print $2}')
+ros2 daemon stop
+sleep 2
+ros2 daemon start

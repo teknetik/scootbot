@@ -1,0 +1,465 @@
+[0.696s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.696s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1f7467aad0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1f74e87ee0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1f74e87ee0>>)
+[0.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.767s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.767s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/scootbot/3.0.0'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extension 'ignore'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extension 'ignore_ament_install'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extensions ['colcon_pkg']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extension 'colcon_pkg'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extensions ['colcon_meta']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extension 'colcon_meta'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extensions ['ros']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extension 'ros'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extensions ['cmake', 'python']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extension 'cmake'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extension 'python'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extensions ['python_setup_py']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests) by extension 'python_setup_py'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extension 'ignore'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extension 'ignore_ament_install'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extensions ['colcon_pkg']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extension 'colcon_pkg'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extensions ['colcon_meta']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extension 'colcon_meta'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extensions ['ros']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extension 'ros'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extensions ['cmake', 'python']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extension 'cmake'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extension 'python'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extensions ['python_setup_py']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(local_tests/__pycache__) by extension 'python_setup_py'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[0.815s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore_ament_install'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_pkg']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_pkg'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_meta']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_meta'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ros']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ros'
+[0.819s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros2' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extensions ['ignore', 'ignore_ament_install']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extension 'ignore'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extension 'ignore_ament_install'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extensions ['colcon_pkg']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extension 'colcon_pkg'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extensions ['colcon_meta']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extension 'colcon_meta'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extensions ['ros']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/scootbot) by extension 'ros'
+[0.821s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scootbot' with type 'ros.ament_cmake' and name 'scootbot'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.824s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extensions ['ignore', 'ignore_ament_install']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extension 'ignore'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extension 'ignore_ament_install'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extensions ['colcon_pkg']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extension 'colcon_pkg'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extensions ['colcon_meta']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extension 'colcon_meta'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extensions ['ros']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_mux) by extension 'ros'
+[0.827s] DEBUG:colcon.colcon_core.package_identification:Package 'src/twist_mux' with type 'ros.ament_cmake' and name 'twist_mux'
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.879s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.879s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.885s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/ubuntu/scootbot/3.0.0/install
+[0.889s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/humble
+[0.894s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.021s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[1.022s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[1.022s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.022s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[1.022s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[1.022s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[1.022s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[1.022s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[1.022s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.022s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/scootbot/3.0.0/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros', 'merge_install': False, 'path': '/home/ubuntu/scootbot/3.0.0/src/rplidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[1.024s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'cmake_args' from command line to 'None'
+[1.025s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'cmake_target' from command line to 'None'
+[1.025s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.025s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'cmake_clean_cache' from command line to 'False'
+[1.025s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'cmake_clean_first' from command line to 'False'
+[1.025s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'cmake_force_configure' from command line to 'False'
+[1.025s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'ament_cmake_args' from command line to 'None'
+[1.025s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'catkin_cmake_args' from command line to 'None'
+[1.025s] Level 5:colcon.colcon_core.verb:set package 'scootbot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.025s] DEBUG:colcon.colcon_core.verb:Building package 'scootbot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/scootbot/3.0.0/build/scootbot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/scootbot/3.0.0/install/scootbot', 'merge_install': False, 'path': '/home/ubuntu/scootbot/3.0.0/src/scootbot', 'symlink_install': True, 'test_result_base': None}
+[1.027s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[1.028s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[1.028s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.028s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[1.028s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[1.028s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[1.028s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[1.028s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[1.028s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.028s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/scootbot/3.0.0/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/scootbot/3.0.0/install/serial', 'merge_install': False, 'path': '/home/ubuntu/scootbot/3.0.0/src/serial', 'symlink_install': True, 'test_result_base': None}
+[1.030s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'cmake_args' from command line to 'None'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'cmake_target' from command line to 'None'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'cmake_clean_cache' from command line to 'False'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'cmake_clean_first' from command line to 'False'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'cmake_force_configure' from command line to 'False'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'ament_cmake_args' from command line to 'None'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'catkin_cmake_args' from command line to 'None'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'twist_mux' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.031s] DEBUG:colcon.colcon_core.verb:Building package 'twist_mux' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/scootbot/3.0.0/build/twist_mux', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/scootbot/3.0.0/install/twist_mux', 'merge_install': False, 'path': '/home/ubuntu/scootbot/3.0.0/src/twist_mux', 'symlink_install': True, 'test_result_base': None}
+[1.033s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.034s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino', 'merge_install': False, 'path': '/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino', 'symlink_install': True, 'test_result_base': None}
+[1.036s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.043s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.044s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/scootbot/3.0.0/src/serial' with build type 'ament_cmake'
+[1.044s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/scootbot/3.0.0/src/serial'
+[1.054s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.055s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.055s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.066s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/scootbot/3.0.0/src/rplidar_ros2' with build type 'ament_cmake'
+[1.066s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/scootbot/3.0.0/src/rplidar_ros2'
+[1.070s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.070s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.080s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/scootbot/3.0.0/src/scootbot' with build type 'ament_cmake'
+[1.080s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/scootbot/3.0.0/src/scootbot'
+[1.084s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.084s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.094s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/scootbot/3.0.0/src/twist_mux' with build type 'ament_cmake'
+[1.094s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/scootbot/3.0.0/src/twist_mux'
+[1.098s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.098s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/serial
+[1.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/rplidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/rplidar_ros
+[1.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/scootbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/scootbot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/scootbot
+[1.151s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/twist_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/twist_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/twist_mux
+[2.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/serial
+[2.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/serial -- -j4 -l4
+[2.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/scootbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/scootbot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/scootbot
+[2.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/scootbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/scootbot -- -j4 -l4
+[2.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/scootbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/scootbot -- -j4 -l4
+[2.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/serial -- -j4 -l4
+[2.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/serial
+[2.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/scootbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/scootbot
+[3.313s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[3.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/serial
+[3.337s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial' for CMake module files
+[3.339s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial' for CMake config files
+[3.340s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[3.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[3.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[3.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[3.356s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/lib'
+[3.357s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/bin'
+[3.358s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/lib/pkgconfig/serial.pc'
+[3.359s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/lib/python3.10/site-packages'
+[3.360s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/bin'
+[3.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.ps1'
+[3.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.dsv'
+[3.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.sh'
+[3.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.bash'
+[3.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.zsh'
+[3.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/serial/share/colcon-core/packages/serial)
+[3.478s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[3.488s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial' for CMake module files
+[3.491s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial' for CMake config files
+[3.492s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[3.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[3.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[3.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[3.507s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/lib'
+[3.508s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/bin'
+[3.509s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/lib/pkgconfig/serial.pc'
+[3.510s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/lib/python3.10/site-packages'
+[3.511s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/serial/bin'
+[3.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.ps1'
+[3.521s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.dsv'
+[3.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.sh'
+[3.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.bash'
+[3.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/serial/share/serial/package.zsh'
+[3.533s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/serial/share/colcon-core/packages/serial)
+[3.536s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino' with build type 'ament_cmake'
+[3.538s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino'
+[3.543s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.544s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino
+[4.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/rplidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/rplidar_ros
+[4.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/rplidar_ros -- -j4 -l4
+[5.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/twist_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/twist_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/twist_mux
+[5.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/twist_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/twist_mux -- -j4 -l4
+[6.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/rplidar_ros -- -j4 -l4
+[7.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/rplidar_ros
+[8.519s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[8.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/rplidar_ros
+[8.530s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros' for CMake module files
+[8.534s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros' for CMake config files
+[8.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[8.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[8.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[8.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[8.551s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib'
+[8.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[8.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[8.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[8.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[8.566s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/bin'
+[8.568s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[8.569s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib/python3.10/site-packages'
+[8.571s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/bin'
+[8.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[8.580s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[8.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.sh'
+[8.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.bash'
+[8.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[8.591s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[8.707s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[8.715s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros' for CMake module files
+[8.727s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros' for CMake config files
+[8.729s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[8.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[8.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[8.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[8.754s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib'
+[8.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[8.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[8.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[8.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[8.774s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/bin'
+[8.775s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[8.775s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib/python3.10/site-packages'
+[8.776s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/bin'
+[8.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[8.801s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[8.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.sh'
+[8.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.bash'
+[8.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[8.808s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[8.992s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/twist_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/twist_mux -- -j4 -l4
+[9.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/twist_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/twist_mux
+[9.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(twist_mux)
+[9.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/twist_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/twist_mux
+[9.665s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux' for CMake module files
+[9.668s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux' for CMake config files
+[9.669s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_mux', 'cmake_prefix_path')
+[9.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/hook/cmake_prefix_path.ps1'
+[9.675s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/hook/cmake_prefix_path.dsv'
+[9.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/hook/cmake_prefix_path.sh'
+[9.678s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/lib'
+[9.678s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/bin'
+[9.678s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/lib/pkgconfig/twist_mux.pc'
+[9.679s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/lib/python3.10/site-packages'
+[9.679s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/bin'
+[9.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.ps1'
+[9.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.dsv'
+[9.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.sh'
+[9.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.bash'
+[9.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.zsh'
+[9.688s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/colcon-core/packages/twist_mux)
+[9.756s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(twist_mux)
+[9.769s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux' for CMake module files
+[9.771s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux' for CMake config files
+[9.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_mux', 'cmake_prefix_path')
+[9.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/hook/cmake_prefix_path.ps1'
+[9.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/hook/cmake_prefix_path.dsv'
+[9.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/hook/cmake_prefix_path.sh'
+[9.783s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/lib'
+[9.783s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/bin'
+[9.784s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/lib/pkgconfig/twist_mux.pc'
+[9.784s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/lib/python3.10/site-packages'
+[9.785s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/twist_mux/bin'
+[9.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.ps1'
+[9.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.dsv'
+[9.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.sh'
+[9.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.bash'
+[9.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/twist_mux/package.zsh'
+[9.800s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/twist_mux/share/colcon-core/packages/twist_mux)
+[12.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scootbot)
+[12.576s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot' for CMake module files
+[12.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/scootbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/scootbot
+[12.579s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot' for CMake config files
+[12.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('scootbot', 'cmake_prefix_path')
+[12.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/hook/cmake_prefix_path.ps1'
+[12.585s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/hook/cmake_prefix_path.dsv'
+[12.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/hook/cmake_prefix_path.sh'
+[12.587s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot/bin'
+[12.587s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot/lib/pkgconfig/scootbot.pc'
+[12.587s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot/lib/python3.10/site-packages'
+[12.588s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot/bin'
+[12.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.ps1'
+[12.592s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.dsv'
+[12.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.sh'
+[12.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.bash'
+[12.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.zsh'
+[12.595s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/scootbot/share/colcon-core/packages/scootbot)
+[12.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/opt/ros/humble /usr/bin/cmake /home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino
+[12.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[12.642s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scootbot)
+[12.647s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot' for CMake module files
+[12.648s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot' for CMake config files
+[12.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('scootbot', 'cmake_prefix_path')
+[12.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/hook/cmake_prefix_path.ps1'
+[12.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/hook/cmake_prefix_path.dsv'
+[12.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/hook/cmake_prefix_path.sh'
+[12.656s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot/bin'
+[12.656s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot/lib/pkgconfig/scootbot.pc'
+[12.656s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot/lib/python3.10/site-packages'
+[12.657s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/scootbot/bin'
+[12.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.ps1'
+[12.662s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.dsv'
+[12.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.sh'
+[12.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.bash'
+[12.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/scootbot/share/scootbot/package.zsh'
+[12.665s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/scootbot/share/colcon-core/packages/scootbot)
+[13.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino -- -j4 -l4
+[13.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino
+[13.750s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[13.755s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino' for CMake module files
+[13.756s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino
+[13.757s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino' for CMake config files
+[13.758s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[13.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[13.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[13.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[13.764s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib'
+[13.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[13.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[13.768s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[13.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[13.769s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/bin'
+[13.769s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[13.770s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib/python3.10/site-packages'
+[13.770s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/bin'
+[13.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[13.775s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[13.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[13.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[13.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[13.778s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[13.831s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[13.836s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino' for CMake module files
+[13.837s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino' for CMake config files
+[13.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[13.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[13.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[13.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[13.844s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib'
+[13.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[13.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[13.849s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[13.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[13.850s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/bin'
+[13.850s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[13.851s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib/python3.10/site-packages'
+[13.851s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/bin'
+[13.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[13.856s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[13.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[13.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[13.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[13.860s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[13.860s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.861s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.862s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.862s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.872s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[13.873s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.873s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.873s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.874s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[13.875s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.878s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/scootbot/3.0.0/install/local_setup.ps1'
+[13.880s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/scootbot/3.0.0/install/_local_setup_util_ps1.py'
+[13.883s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/scootbot/3.0.0/install/setup.ps1'
+[13.886s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/scootbot/3.0.0/install/local_setup.sh'
+[13.887s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/scootbot/3.0.0/install/_local_setup_util_sh.py'
+[13.889s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/scootbot/3.0.0/install/setup.sh'
+[13.894s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/scootbot/3.0.0/install/local_setup.bash'
+[13.895s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/scootbot/3.0.0/install/setup.bash'
+[13.898s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/scootbot/3.0.0/install/local_setup.zsh'
+[13.899s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/scootbot/3.0.0/install/setup.zsh'
