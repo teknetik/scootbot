@@ -9,7 +9,7 @@ struct Config
   std::string left_wheel_name = "l_wheel";
   std::string right_wheel_name = "r_wheel";
   float loop_rate = 30;
-  std::string device = "/dev/ttyUSB1";
+  std::string device = "/dev/saber_serial";
   int baud_rate = 115200;
   int timeout = 1000;
   int enc_counts_per_rev = 1800;

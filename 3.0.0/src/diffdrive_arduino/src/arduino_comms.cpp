@@ -75,10 +75,10 @@ std::string ArduinoComms::sendMsg(const std::string &msg_to_send)
     serial_conn_.write(msg_to_send);
     std::string response = serial_conn_.readline();
 
-    RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
-                "Sent: %s", msg_to_send.c_str());
-    RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
-                "Received: %s", response.c_str());
+    // RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
+    //             "Sent: %s", msg_to_send.c_str());
+    // RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
+    //             "Received: %s", response.c_str());
 
     return response;
 }
@@ -87,8 +87,8 @@ void ArduinoComms::sendSingleMsg(const std::string &msg_to_send)
 {
     serial_conn_.write(msg_to_send);
 
-    RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
-                "Sent: %s", msg_to_send.c_str());
+    // RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
+    //             "Sent: %s", msg_to_send.c_str());
 
     
 }
