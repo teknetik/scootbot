@@ -19,13 +19,13 @@ void ArduinoComms::setup(const std::string &serial_device, int32_t baud_rate, in
 
 void ArduinoComms::sendEmptyMsg()
 {
-    std::string response = sendMsg("\r");
+    std::string response = sendMsg("\r\n");
 }
 
 void ArduinoComms::readEncoderValues(int &val_1, int &val_2)
 {   
-    std::string motor1 = sendMsg("1,getp\r");
-    std::string motor2 = sendMsg("2,getp\r");
+    std::string motor1 = sendMsg("1,getp\r\n");
+    std::string motor2 = sendMsg("2,getp\r\n");
 
     std::string stripped_motor1 = motor1.substr(3);
     std::string stripped_motor2 = motor2.substr(3);
@@ -34,20 +34,32 @@ void ArduinoComms::readEncoderValues(int &val_1, int &val_2)
     val_2 = std::atoi(stripped_motor2.c_str());
 }
 
+void ArduinoComms::start()
+{
+    std::stringstream ss;
+    
+    ss << "1,START\r";
+    sendSingleMsg(ss.str());
+    ss.str(std::string()); // Clear stringstream
+    ss.clear(); // Clear any error flags
+    ss << "2,START\r";
+    sendSingleMsg(ss.str());
+}
+
 
 void ArduinoComms::setMotorValues(int val_1, int val_2)
 {
     std::stringstream ss;
     // LEFT MOTOR
-    ss << "1,S" << val_1 << "\r";
-    sendMsg(ss.str());
+    ss << "1,S" << val_1 << "\r\n";
+    sendSingleMsg(ss.str());
 
     ss.str(std::string()); // Clear stringstream
     ss.clear(); // Clear any error flags
 
     //RIGHT MOTOR
-    ss << "2,S" << val_2 << "\r";
-    sendMsg(ss.str());
+    ss << "2,S" << val_2 << "\r\n";
+    sendSingleMsg(ss.str());
 }
 
 
@@ -64,9 +76,19 @@ std::string ArduinoComms::sendMsg(const std::string &msg_to_send)
     std::string response = serial_conn_.readline();
 
     RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
-                "Sent: %s \n", msg_to_send.c_str());
+                "Sent: %s", msg_to_send.c_str());
     RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
-                "Received: %s \n", response.c_str());
+                "Received: %s", response.c_str());
 
     return response;
+}
+
+void ArduinoComms::sendSingleMsg(const std::string &msg_to_send)
+{
+    serial_conn_.write(msg_to_send);
+
+    RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), 
+                "Sent: %s", msg_to_send.c_str());
+
+    
 }

@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.000480] (-) JobUnselected: {'identifier': 'scootbot'}
+[0.000637] (-) JobUnselected: {'identifier': 'serial'}
+[0.000735] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/ubuntu/scootbot/3.0.0/install/serial')])}
+[0.000882] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[0.026703] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[0.028174] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[0.029788] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '10.0.0.3 38278 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino/lib:/home/ubuntu/scootbot/3.0.0/install/serial/lib:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/root'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino'), ('SSH_CONNECTION', '10.0.0.3 38278 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/ubuntu/scootbot/3.0.0/install/serial:/home/ubuntu/scootbot/3.0.0/install/twist_mux:/home/ubuntu/scootbot/3.0.0/install/diffdrive_arduino:/home/ubuntu/scootbot/3.0.0/install/scootbot:/home/ubuntu/scootbot/3.0.0/install/rplidar_ros')]), 'shell': False}
+[0.097560] (-) TimerEvent: {}
+[0.109470] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target diffdrive_arduino\x1b[0m\n'}
+[0.132616] (diffdrive_arduino) StdoutLine: {'line': b'[ 42%] Built target fake_robot\n'}
+[0.162385] (diffdrive_arduino) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o\x1b[0m\n'}
+[0.197697] (-) TimerEvent: {}
+[0.298223] (-) TimerEvent: {}
+[0.398740] (-) TimerEvent: {}
+[0.499269] (-) TimerEvent: {}
+[0.599805] (-) TimerEvent: {}
+[0.700343] (-) TimerEvent: {}
+[0.800872] (-) TimerEvent: {}
+[0.901415] (-) TimerEvent: {}
+[1.001954] (-) TimerEvent: {}
+[1.102499] (-) TimerEvent: {}
+[1.203032] (-) TimerEvent: {}
+[1.303592] (-) TimerEvent: {}
+[1.404130] (-) TimerEvent: {}
+[1.504674] (-) TimerEvent: {}
+[1.605215] (-) TimerEvent: {}
+[1.705744] (-) TimerEvent: {}
+[1.806265] (-) TimerEvent: {}
+[1.906836] (-) TimerEvent: {}
+[2.007538] (-) TimerEvent: {}
+[2.108063] (-) TimerEvent: {}
+[2.208601] (-) TimerEvent: {}
+[2.309299] (-) TimerEvent: {}
+[2.409998] (-) TimerEvent: {}
+[2.510520] (-) TimerEvent: {}
+[2.611057] (-) TimerEvent: {}
+[2.711589] (-) TimerEvent: {}
+[2.812228] (-) TimerEvent: {}
+[2.913038] (-) TimerEvent: {}
+[3.013529] (-) TimerEvent: {}
+[3.114016] (-) TimerEvent: {}
+[3.214507] (-) TimerEvent: {}
+[3.315010] (-) TimerEvent: {}
+[3.415498] (-) TimerEvent: {}
+[3.515976] (-) TimerEvent: {}
+[3.616456] (-) TimerEvent: {}
+[3.716941] (-) TimerEvent: {}
+[3.817425] (-) TimerEvent: {}
+[3.917922] (-) TimerEvent: {}
+[4.018418] (-) TimerEvent: {}
+[4.118911] (-) TimerEvent: {}
+[4.219423] (-) TimerEvent: {}
+[4.319921] (-) TimerEvent: {}
+[4.420407] (-) TimerEvent: {}
+[4.520904] (-) TimerEvent: {}
+[4.621386] (-) TimerEvent: {}
+[4.721879] (-) TimerEvent: {}
+[4.822365] (-) TimerEvent: {}
+[4.922910] (-) TimerEvent: {}
+[5.023416] (-) TimerEvent: {}
+[5.123916] (-) TimerEvent: {}
+[5.224401] (-) TimerEvent: {}
+[5.324872] (-) TimerEvent: {}
+[5.425387] (-) TimerEvent: {}
+[5.525920] (-) TimerEvent: {}
+[5.626408] (-) TimerEvent: {}
+[5.642681] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:61:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kstd::string ArduinoComms::sendMsg(const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.643376] (diffdrive_arduino) StderrLine: {'line': b'   61 | std::string \x1b[01;31m\x1b[KArduinoComms\x1b[m\x1b[K::sendMsg(const std::string &msg_to_send)\n'}
+[5.643720] (diffdrive_arduino) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.644046] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/src/arduino_comms.cpp:1\x1b[m\x1b[K:\n'}
+[5.644382] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h:28:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kstd::string ArduinoComms::sendMsg(const string&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.644756] (diffdrive_arduino) StderrLine: {'line': b'   28 |   std::string \x1b[01;36m\x1b[KsendMsg\x1b[m\x1b[K(const std::string &msg_to_send, bool print_output = false);\n'}
+[5.645083] (diffdrive_arduino) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.645411] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/scootbot/3.0.0/src/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h:7:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass ArduinoComms\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[5.645764] (diffdrive_arduino) StderrLine: {'line': b'    7 | class \x1b[01;36m\x1b[KArduinoComms\x1b[m\x1b[K\n'}
+[5.646083] (diffdrive_arduino) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.726564] (-) TimerEvent: {}
+[5.827110] (-) TimerEvent: {}
+[5.927671] (-) TimerEvent: {}
+[6.028230] (-) TimerEvent: {}
+[6.128802] (-) TimerEvent: {}
+[6.229346] (-) TimerEvent: {}
+[6.329887] (-) TimerEvent: {}
+[6.430446] (-) TimerEvent: {}
+[6.531019] (-) TimerEvent: {}
+[6.631589] (-) TimerEvent: {}
+[6.643743] (diffdrive_arduino) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1\n'}
+[6.644171] (diffdrive_arduino) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2\n'}
+[6.644583] (diffdrive_arduino) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.648160] (diffdrive_arduino) CommandEnded: {'returncode': 2}
+[6.731819] (-) TimerEvent: {}
+[6.745631] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 2}
+[6.756976] (-) EventReactorShutdown: {}

@@ -146,7 +146,7 @@ def generate_launch_description():
             parameters=[config_filepath],
             condition=launch.conditions.UnlessCondition(LaunchConfiguration('use_ros2_control'))
             ),
-        rsp,
+        #rsp,
         joint_state_publisher_node,
         #joint_state_publisher_gui_node,
         delayed_controller_manager,

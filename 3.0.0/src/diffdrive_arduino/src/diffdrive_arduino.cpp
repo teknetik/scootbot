@@ -75,7 +75,8 @@ std::vector<hardware_interface::CommandInterface> DiffDriveArduino::export_comma
 CallbackReturn DiffDriveArduino::on_activate(const rclcpp_lifecycle::State & /* previous_state */)
 {
   RCLCPP_INFO(logger_, "Starting Controller...");
-  arduino_.sendEmptyMsg();
+  //arduino_.sendEmptyMsg();
+  arduino_.start();
 
 
   return CallbackReturn::SUCCESS;

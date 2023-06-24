@@ -19,13 +19,15 @@ public:
 
   void setup(const std::string &serial_device, int32_t baud_rate, int32_t timeout_ms);
   void sendEmptyMsg();
+  void start();
   void readEncoderValues(int &val_1, int &val_2);
   void setMotorValues(int val_1, int val_2);
   void setPidValues(float k_p, float k_d, float k_i, float k_o);
 
   bool connected() const { return serial_conn_.isOpen(); }
 
-  std::string sendMsg(const std::string &msg_to_send, bool print_output = false);
+  std::string sendMsg(const std::string &msg_to_send);
+  void sendSingleMsg(const std::string &msg_to_send);
 
 
 private:
