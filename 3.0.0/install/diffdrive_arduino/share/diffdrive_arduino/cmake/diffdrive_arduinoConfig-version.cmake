@@ -1,1 +1,0 @@
-/home/ubuntu/scootbot/3.0.0/build/diffdrive_arduino/ament_cmake_core/diffdrive_arduinoConfig-version.cmake

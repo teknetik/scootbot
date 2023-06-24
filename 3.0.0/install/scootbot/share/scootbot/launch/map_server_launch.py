@@ -1,1 +1,0 @@
-/home/ubuntu/scootbot/3.0.0/src/scootbot/launch/map_server_launch.py

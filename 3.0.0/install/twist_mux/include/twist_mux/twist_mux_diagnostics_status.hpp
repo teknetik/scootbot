@@ -1,1 +1,0 @@
-/home/ubuntu/scootbot/3.0.0/src/twist_mux/include/twist_mux/twist_mux_diagnostics_status.hpp

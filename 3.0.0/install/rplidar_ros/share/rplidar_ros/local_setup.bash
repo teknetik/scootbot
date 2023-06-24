@@ -1,1 +1,0 @@
-/home/ubuntu/scootbot/3.0.0/build/rplidar_ros/ament_cmake_environment_hooks/local_setup.bash
